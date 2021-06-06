@@ -1,0 +1,29 @@
+{
+  "name": "pingo-admin",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Alan Sha Salim",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/firebase": "^7.5.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.6.5",
+    "firebase": "^8.5.0",
+    "firebase-admin": "^9.7.0",
+    "nuxt": "^2.15.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "fibers": "^5.0.0",
+    "node-sass": "^6.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.2.0"
+  }
+}

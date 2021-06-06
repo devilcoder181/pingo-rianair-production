@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: $font-primary;
+
+  @media screen and (max-width:991px) {
+      font-size: 14px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.25vw;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+  background-color: $color-dark-2;
+  font-family: $font-primary;
+
+  @media only screen and (max-width:1200px){
+    font-size: 18px;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-weight: 600;
+}
+
+
+a {
+  color: $color-primary;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  &:focus {
+      outline: none;
+      color: $color-secondary;
+  }
+
+  &:hover {
+      outline: none;
+      text-decoration: none;
+      color: $color-secondary;
+  }
+}
+
+ul,ol{
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $color-primary $color-dark;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $color-dark;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+  border: 3px solid $color-dark;
+}
+
+
+.subtitle_{
+  display: block;
+  color: $color-text;
+  @include mdText2();
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+}

@@ -1,0 +1,42 @@
+@mixin smText {
+  font-size: 0.8vw;
+  @media only screen and (max-width:1200px){
+    font-size: 14px;
+  }
+}
+
+@mixin smText2 {
+  font-size: 0.9vw;
+  @media only screen and (max-width:1200px){
+    font-size: 16px;
+  }
+}
+
+@mixin mdText {
+  font-size: 1vw;
+  @media only screen and (max-width:1200px){
+    font-size: 18px;
+  }
+}
+
+
+@mixin mdText2 {
+  font-size: 1.5vw;
+  @media only screen and (max-width:1200px){
+    font-size: 20px;
+  }
+}
+
+@mixin mdText3 {
+  font-size: 1.75vw;
+  @media only screen and (max-width:1200px){
+    font-size: 24px;
+  }
+}
+
+@mixin lgText {
+  font-size: 2vw;
+  @media only screen and (max-width:1200px){
+    font-size: 36px;
+  }
+}

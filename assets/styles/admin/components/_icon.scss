@@ -1,0 +1,207 @@
+
+@font-face {
+  font-family: "pingo-admin";
+  src:url("~assets/fonts/icons-admin/pingo-admin.eot");
+  src:url("~assets/fonts/icons-admin/pingo-admin.eot?#iefix") format("embedded-opentype"),
+    url("~assets/fonts/icons-admin/pingo-admin.woff") format("woff"),
+    url("~assets/fonts/icons-admin/pingo-admin.ttf") format("truetype"),
+    url("~assets/fonts/icons-admin/pingo-admin.svg#pingo-admin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "pingo-admin" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "pingo-admin" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-align-left:before {
+  content: "\61";
+}
+.icon-cloud:before {
+  content: "\62";
+}
+.icon-folder-add:before {
+  content: "\63";
+}
+.icon-folder:before {
+  content: "\64";
+}
+.icon-crop:before {
+  content: "\65";
+}
+.icon-checkbox:before {
+  content: "\66";
+}
+.icon-comments:before {
+  content: "\67";
+}
+.icon-lightbulb:before {
+  content: "\68";
+}
+.icon-graph-bar:before {
+  content: "\69";
+}
+.icon-battery-half:before {
+  content: "\6a";
+}
+.icon-check:before {
+  content: "\6b";
+}
+.icon-torsos:before {
+  content: "\6c";
+}
+.icon-wrench:before {
+  content: "\6d";
+}
+.icon-x:before {
+  content: "\6e";
+}
+.icon-adjust:before {
+  content: "\6f";
+}
+.icon-cog:before {
+  content: "\70";
+}
+.icon-cloud-thunder:before {
+  content: "\71";
+}
+.icon-tachometer:before {
+  content: "\72";
+}
+.icon-image:before {
+  content: "\73";
+}
+.icon-doc-text-inv:before {
+  content: "\74";
+}
+.icon-web:before {
+  content: "\75";
+}
+.icon-social-buffer:before {
+  content: "\76";
+}
+.icon-images:before {
+  content: "\77";
+}
+.icon-volume-up:before {
+  content: "\78";
+}
+.icon-volume-off:before {
+  content: "\79";
+}
+.icon-android-checkbox:before {
+  content: "\7a";
+}
+.icon-android-options:before {
+  content: "\41";
+}
+.icon-android-send:before {
+  content: "\42";
+}
+.icon-person-add:before {
+  content: "\43";
+}
+.icon-person-stalker:before {
+  content: "\44";
+}
+.icon-person:before {
+  content: "\45";
+}
+.icon-database:before {
+  content: "\46";
+}
+.icon-trash:before {
+  content: "\47";
+}
+.icon-suitcase:before {
+  content: "\48";
+}
+.icon-sync:before {
+  content: "\49";
+}
+.icon-calendar:before {
+  content: "\4a";
+}
+.icon-check-circle:before {
+  content: "\4b";
+}
+.icon-check-square:before {
+  content: "\4c";
+}
+.icon-check-square-o:before {
+  content: "\4d";
+}
+.icon-chevron-circle-down:before {
+  content: "\4e";
+}
+.icon-chevron-circle-left:before {
+  content: "\4f";
+}
+.icon-chevron-circle-right:before {
+  content: "\50";
+}
+.icon-chevron-circle-up:before {
+  content: "\51";
+}
+.icon-arrow-down:before {
+  content: "\52";
+}
+.icon-arrow-left:before {
+  content: "\53";
+}
+.icon-arrow-right:before {
+  content: "\54";
+}
+.icon-arrow-up:before {
+  content: "\55";
+}
+.icon-angle-down:before {
+  content: "\56";
+}
+.icon-angle-left:before {
+  content: "\57";
+}
+.icon-angle-right:before {
+  content: "\58";
+}
+.icon-angle-up:before {
+  content: "\59";
+}
+.icon-folder-1:before {
+  content: "\5a";
+}
+.icon-folder-open:before {
+  content: "\30";
+}
+.icon-search:before {
+  content: "\31";
+}
+.icon-close-circled:before {
+  content: "\32";
+}
+.icon-log-in:before {
+  content: "\33";
+}

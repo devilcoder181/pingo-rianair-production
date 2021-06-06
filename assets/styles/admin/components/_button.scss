@@ -1,0 +1,118 @@
+.btn_primary{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  border: none;
+  outline: none;
+  background-color: $color-primary;
+  font-size: 1vw;
+  font-weight: 500;
+  color: $color-white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus, &:active{
+    box-shadow: 1px 1px 10px $color-primary;
+    background-color: darken($color-primary, 2%);
+  }
+
+  &[disabled]{
+    pointer-events: none;
+    background: hsl(231deg 11% 17%);
+    color: hsl(0deg 0% 58%);
+  }
+
+  i{
+    display: inherit;
+    margin-right: 10px;
+  }
+}
+
+
+.btn_grey{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  border: none;
+  outline: none;
+  background-color: $color-dark;
+  font-size: 1vw;
+  font-weight: 500;
+  color: $color-white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus, &:active{
+    background-color: darken($border-color, 2%);
+  }
+
+  &[disabled]{
+    pointer-events: none;
+    background: hsl(231deg 11% 17%);
+    color: hsl(0deg 0% 58%);
+  }
+
+  i{
+    display: inherit;
+    margin-right: 10px;
+  }
+}
+
+
+.btn_secondary{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  border: none;
+  outline: none;
+  background-color: $border-color;
+  font-size: 1vw;
+  font-weight: 500;
+  color: $color-white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus, &:active{
+    background-color: darken($border-color, 2%);
+    color: $color-secondary;
+  }
+
+  &[disabled]{
+    pointer-events: none;
+    background: hsl(231deg 11% 17%);
+    color: hsl(0deg 0% 58%);
+  }
+
+  i{
+    display: inherit;
+    margin-right: 10px;
+  }
+}
+
+.button_group{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 -7px;
+
+  &>*{
+    margin:  0 7px;
+  }
+}
