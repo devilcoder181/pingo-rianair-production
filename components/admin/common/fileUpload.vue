@@ -1,6 +1,6 @@
 <template>
   <div class="pingo_fileupload_wrapper">
-    <h3>Upload Image</h3>
+    <h3>{{title}}</h3>
     <div class="image_placeholder">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
@@ -56,8 +56,13 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
   export default {
     props: {
+      title: {
+        require: true,
+        type: String
+      },
       loader: {
         require: true
       },
@@ -66,17 +71,16 @@
       return {
         myFile: null,
         fileURL: null,
-        showLoader: false,
       }
+    },
+    computed: {
+      ...mapGetters(['showLoader']),
     },
     methods: {
      async fileInput(file) {
-       let updateLoader = this.showLoader;
         try{
+            this.$store.commit('activateLoader', true)
             this.myFile = file.target.files[0]
-            updateLoader = true
-            this.$emit("update-showLoader", updateLoader)
-
             const imgData = new FormData();
             imgData.append("image", this.myFile);
             const filePath = `testPath/${Date.now()}-rianiar-img-data`;
@@ -94,8 +98,9 @@
         }catch (e) {
           console.error(e);
         } finally {
-          updateLoader = false;
-          this.$emit("update-showLoader", updateLoader)
+         setTimeout(()=> {
+           this.$store.commit('activateLoader', false)
+         })
         }
     },
     }
@@ -113,7 +118,7 @@
       position: relative;
       display: block;
       color: $color-white;
-      @include mdText2();
+      @include mdText();
       margin-bottom: 1em;
     }
 

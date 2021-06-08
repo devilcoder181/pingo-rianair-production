@@ -63,22 +63,27 @@
 </template>
 
 <script>
+import {mapGetters } from 'vuex';
+
 export default {
- data() {
-   return {
-     aboutText: {
-        title: '',
-        homeContent: '',
-        pageContent: '',
-        vissionContent: '',
-        missionContent: ''
-      }
-   }
- },
+  // data() {
+  //   return{
+  //     aboutText: {
+  //       title: '',
+  //       homeContent: '',
+  //       pageContent: '',
+  //       vissionContent: '',
+  //       missionContent: ''
+  //     }
+  //   }
+  // },
+ computed: {
+  ...mapGetters(['aboutText']),
+  },
  methods: {
    submit() {
      this.$emit('submitForm', this.aboutText)
-   }
+   },
  }
 }
 </script>

@@ -10,7 +10,7 @@
     padding: 0.5em 1em;
     bottom:0;
     left:0;
-    background-color: #18a523;
+    background-color: $color-green;
     transform-origin: center;
     width: 100%;
     text-align: center;

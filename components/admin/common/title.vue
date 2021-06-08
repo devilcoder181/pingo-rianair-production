@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
 
    <div class="button_wrapper">
-      <button class="btn_ btn_primary"><i class="icon icon-graph-bar"></i> SEO</button>
+      <slot name="seo"></slot>
       <nuxt-link class="btn_ btn_grey" :to="backLink"><i class="icon icon-arrow-left"></i> Back</nuxt-link>
    </div>
 

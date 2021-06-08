@@ -3,6 +3,7 @@ import * as auth from "./modules/auth";
 import * as about from "./modules/about";
 import * as loader from "./modules/loader";
 import * as alert from "./modules/alertMessages";
+import * as seo from "./modules/seo";
 
 const createStore = () => {
   return new Vuex.Store({
@@ -11,10 +12,9 @@ const createStore = () => {
       auth,
       about,
       loader,
-      alert
+      alert,
+      seo
     }
-  });
-};
-
-
+  })
+}
 export default createStore;

@@ -116,3 +116,25 @@
     margin:  0 7px;
   }
 }
+
+
+.badge_{
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  @include smText();
+  line-height: 1;
+  font-weight: 500;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 0.5em;
+
+  &.green_{
+    background-color: $color-green;
+  }
+
+  &.orange_{
+    background-color: $color-orange;
+  }
+}
