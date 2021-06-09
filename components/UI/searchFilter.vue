@@ -13,22 +13,23 @@
      </div>
 
      <div class="pagination_">
-         <label>Pagination</label>
-
-         <ul class="pag_">
-             <li class="active_">1</li>
-             <li>2</li>
-             <li>3</li>
-             <li>4</li>
-             <li>5</li>
-         </ul>
+        <nuxt-link :to="rountLink" class="btn_primary"><i class="icon icon-plus-square"></i> {{buttonTitle}}</nuxt-link>
      </div>
   </div>
 </template>
 
 <script>
   export default {
-
+      props: {
+          rountLink: {
+              type: String,
+              require: true
+          },
+          buttonTitle: {
+            type: String,
+            require: true 
+          }
+      }
   }
 
 </script>
@@ -40,7 +41,7 @@
     width: 100%;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-gap: 2.5vw;
-
+    align-items: center;
     label {
         display: block;
         position: relative;

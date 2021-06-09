@@ -11,6 +11,7 @@
 
 }
 
+
 [data-icon]:before {
   font-family: "pingo-admin" !important;
   content: attr(data-icon);
@@ -210,4 +211,7 @@
 }
 .icon-photo:before {
   content: "\35";
+}
+.icon-plus-square:before {
+  content: "\36";
 }

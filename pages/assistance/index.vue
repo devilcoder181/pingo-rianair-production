@@ -12,14 +12,20 @@
     <div class="p-row mt_1">
         <div class="p-col">
             <div class="p-content-body">
-                <UISearchFilter title="Assistance List" collection="assistanceContent"></UISearchFilter>
+                <UISearchFilter 
+                    collection="assistanceContent"
+                    rountLink="/assistance/create"
+                    buttonTitle="Create Assistance"
+                ></UISearchFilter>
             </div>
         </div>
     </div>
 
     <div class="p-row">
         <div class="p-col">
-            <AdminAssistanceList></AdminAssistanceList>
+            <AdminAssistanceList
+                :content="assistanceContent"
+            ></AdminAssistanceList>
         </div>
     </div>
 
@@ -27,14 +33,20 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   layout: 'admin',
   data() {
      return {
       pageTitle: 'Assistance',
       backLink: '/',
+      rountLink: ''
      }
    },
+   computed: {
+     ...mapGetters(['assistanceContent']),
+    },
    methods: {
 
    }
