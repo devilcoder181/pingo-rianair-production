@@ -12,11 +12,21 @@
     },
 
     editAssistance(state, value) {
-        state.assistanceContent = value.data
+
+        for (var i in state.assistanceContent) {
+            if (state.assistanceContent[i].id == value.id) {
+                state.assistanceContent[i] = value.data;
+               break; 
+            }
+        }
     },
 
     deleteAssistance(state, value) {
         state.assistanceContent.pop(value)
+    },
+
+    searchAssistance(state, value) {
+        state.assistanceContent = value
     },
   }; 
   export const actions = {
@@ -76,7 +86,14 @@
         .catch( (e)=> {
             console.log(e)
         })
-    }
+    },
+
+    // Search Data
+    searchAssistance(vuexContext, value) {
+       let searchData = state.assistanceContent;
+       let findData = searchData.find(o => o.title === value);
+       vuexContext.commit("searchAssistance", findData);
+    },
 
   };
   export const getters = {

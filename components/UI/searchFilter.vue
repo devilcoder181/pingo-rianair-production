@@ -3,7 +3,7 @@
      <div class="search_bar">
          <label>Search Content</label>
           <div class="search_wrapper">
-        <input type="text" placeholder="Search..">
+        <input type="text" @change="search" v-model="searchString" placeholder="Search..">
         <i class="icon icon-search"></i>
       </div>
      </div>
@@ -28,6 +28,16 @@
           buttonTitle: {
             type: String,
             require: true 
+          }
+      },
+      data() {
+          return {
+              searchString: ''
+          }
+      },
+      methods: {
+          search() {
+              this.$emit('search', this.searchString)
           }
       }
   }

@@ -77,7 +77,7 @@ export default {
                     this.$store.commit('activateLoader', false)
                     this.successMessage = 'Content Updated Successfully'
                     this.$store.commit('activateAlert', true)
-                    location.reload()
+                   // location.reload()
                 },2000)
                 
             }

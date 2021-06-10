@@ -9,12 +9,12 @@
         </div>
 
         <ul class="table_body">
-            <li v-for="(item, index) in content" :key="index">
+            <li v-for="(item, index) in assistanceContent" :key="index">
                 <div class="index_">
                     <span class="icon icon icon-folder-1"></span>
                 </div>
                 <label>{{item.title}}</label>
-                <label>{{new Date(item.setDate.seconds)}}</label>
+                <label>{{new Date(item.setDate)}}</label>
                 <div class="badge_sec">
                     <div class="badge_ green_" v-if="item.isActive">Active</div>
                     <div class="badge_ orange_" v-if="!item.isActive">Disabled</div>
@@ -24,7 +24,7 @@
                         <a :href="`https://www.rainair.in/assistance/${item.id}`" target="_blank" class="link_"><span class="icon icon-doc-text-inv"></span></a>
                     </li>
                     <li>
-                        <button @click="remove(item.id)" class="link_"><span class="icon icon-trash"></span></button>
+                        <button @click="deleteNow(item.id)" class="link_"><span class="icon icon-trash"></span></button>
                     </li>
                     <li>
                         <nuxt-link :to="`/assistance/${item.id}`" class="link_"><span class="icon icon-pencil-square"></span></nuxt-link>
@@ -32,6 +32,17 @@
                 </ul>
             </li>
         </ul>
+
+        <transition name="alert">
+            <UIAlertDelete 
+                v-if="deleteAlert"
+                @cancel="cancelDelete"
+                @remove="remove"
+                :id="currentId"
+            >
+
+            </UIAlertDelete>
+        </transition>
 
         <transition name="alertAnim">
             <AdminFormSuccess v-if="showAlert">
@@ -45,23 +56,27 @@
 import { mapGetters } from 'vuex';
 
 export default {
-    props: {
-        content: {
-            type: String,
-            require: true
-        }
-    },
     data() {
         return {
             successMessage: '',
+            deleteAlert: false,
+            currentId: '',
         }
     },
     computed: {
-     ...mapGetters(['showAlert'],),
+     ...mapGetters(['assistanceContent', 'showAlert'],),
     },
     methods: {
+        deleteNow(value) {
+            this.deleteAlert = true;
+            this.currentId = value;
+        },
+        cancelDelete() {
+            this.deleteAlert = false;
+        },
         async remove(value) {
            try{
+            this.deleteAlert = false
             this.$store.commit('activateLoader', true)
              this.$store.dispatch('deleteAssistance', value)
             } catch(e) {
