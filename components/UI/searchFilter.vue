@@ -13,15 +13,7 @@
      </div>
 
      <div class="pagination_">
-         <label>Pagination</label>
-
-         <ul class="pag_">
-             <li class="active_">1</li>
-             <li>2</li>
-             <li>3</li>
-             <li>4</li>
-             <li>5</li>
-         </ul>
+         <nuxt-link to="assistance/create" class="btn_primary"><i class="icon icon-pencil-square"></i> Create Assistance</nuxt-link>
      </div>
   </div>
 </template>
@@ -40,6 +32,7 @@
     width: 100%;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-gap: 2.5vw;
+    align-items: center;
 
     label {
         display: block;
@@ -56,10 +49,10 @@
       position: relative;
       display: block;
 
-      
+
 
       .search_wrapper {
-        position: relative; 
+        position: relative;
         width: 100%;
 
         i {
