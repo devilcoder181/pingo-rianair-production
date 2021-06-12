@@ -1,6 +1,7 @@
 
   export const state = () => ({
-    assistanceContent: []
+    assistanceContent: [],
+    searchAssistanceContent: []
   });
   export const mutations = {
     addAssistance(state, value) {
@@ -27,8 +28,23 @@
       arr.splice(removeIndex, 1);
     },
 
+    fetchAssistance(state, value){
+      state.searchAssistanceContent = value
+    },
+
     searchAssistance(state, value) {
-        state.assistanceContent = value
+      let searchState = state.assistanceContent
+  
+      if (value != '' && value) {
+        searchState = searchState.filter((item) => {
+              return item.title
+                .toUpperCase()
+                .includes(value.toUpperCase())
+            })
+          state.searchAssistanceContent = searchState
+          }else if (value == ''){
+            state.searchAssistanceContent = state.assistanceContent
+          }
     },
   };
   export const actions = {
@@ -45,6 +61,7 @@
             });
 
             vuexContext.commit("gettingAssistance", assistanceArray);
+            vuexContext.commit("fetchAssistance", assistanceArray);
 
             //console.log(assistanceArray)
 
@@ -91,16 +108,17 @@
     },
 
     // Search Data
-    searchAssistance(vuexContext, value) {
-       let searchData = state.assistanceContent;
-       let findData = searchData.find(o => o.title === value);
-       vuexContext.commit("searchAssistance", findData);
-    },
+    searchAssistance(vuexContext, value){
+      vuexContext.commit("searchAssistance", value);
+    }
 
   };
   export const getters = {
     assistanceContent(state) {
       return state.assistanceContent;
+    },
+    searchAssistanceContent(state) {
+      return state.searchAssistanceContent;
     },
   };
 

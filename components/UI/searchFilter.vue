@@ -3,7 +3,7 @@
      <div class="search_bar">
          <label>Search Content</label>
           <div class="search_wrapper">
-        <input type="text" @keyup="search" v-model="searchString" placeholder="Search..">
+        <input type="text" @keyup="search" @keyup.delete="search" v-model="searchString" placeholder="Search..">
         <i class="icon icon-search"></i>
       </div>
      </div>
@@ -39,7 +39,8 @@
           search() {
               this.$emit('search', this.searchString)
           }
-      }
+      },
+      
   }
 
 </script>

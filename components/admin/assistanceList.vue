@@ -9,7 +9,7 @@
         </div>
 
         <ul class="table_body">
-            <li v-for="(item, index) in assistanceContent" :key="index">
+            <li v-for="(item, index) in searchAssistanceContent" :key="index">
                 <div class="index_">
                     <span class="icon icon icon-folder-1"></span>
                 </div>
@@ -64,7 +64,7 @@ export default {
         }
     },
     computed: {
-     ...mapGetters(['assistanceContent', 'showAlert'],),
+     ...mapGetters(['assistanceContent', 'showAlert', 'searchAssistanceContent'],),
     },
     methods: {
         deleteNow(value) {
