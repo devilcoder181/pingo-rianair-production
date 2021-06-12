@@ -125,4 +125,36 @@
     }
   }
 
+  .scale-enter, .scale-leave, .scale-leave-to{
+    &:before{
+      opacity: 0;
+    }
+    .alert_content{
+      transform: scale(0.75);
+      transform-origin: center;
+      opacity: 0;
+    }
+  }
+
+  .scale-enter-to{
+    &:before{
+      opacity: 1;
+    }
+    .alert_content{
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  .scale-enter-active, .scale-leave-active{
+    transition: all 0.3s ease;
+    &:before {
+      transition: all 0.3s ease;
+    }
+    .alert_content{
+      transition: all 0.3s ease;
+    }
+  }
+
+
 </style>

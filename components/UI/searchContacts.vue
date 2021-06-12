@@ -1,35 +1,37 @@
 <template>
   <div class="filter_wrapper">
      <div class="search_bar">
-         <label>Search Content</label>
+         <label>Search By Name</label>
           <div class="search_wrapper">
         <input type="text" @keyup="search" @keyup.delete="search" v-model="searchString" placeholder="Search..">
         <i class="icon icon-search"></i>
       </div>
      </div>
 
-     <div class="placeholder_">
-
+      <div class="search_bar">
+         <label>Search By Email</label>
+          <div class="search_wrapper">
+        <input type="text" @keyup="search" @keyup.delete="search" v-model="searchString" placeholder="Search..">
+        <i class="icon icon-search"></i>
+      </div>
      </div>
 
-     <div class="pagination_">
-         <nuxt-link :to="rountLink" class="btn_primary"><i class="icon icon-pencil-square"></i> {{buttonTitle}}</nuxt-link>
+      <div class="search_bar">
+         <label>Search By Phone</label>
+          <div class="search_wrapper">
+        <input type="text" @keyup="search" @keyup.delete="search" v-model="searchString" placeholder="Search..">
+        <i class="icon icon-search"></i>
+      </div>
      </div>
+
+
+
+    
   </div>
 </template>
 
 <script>
   export default {
-      props: {
-          rountLink: {
-              type: String,
-              require: true
-          },
-          buttonTitle: {
-            type: String,
-            require: true
-          }
-      },
       data() {
           return {
               searchString: ''
@@ -50,7 +52,7 @@
     position: relative;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 0.75fr 0.75fr;
     grid-gap: 2.5vw;
     align-items: center;
     label {

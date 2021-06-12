@@ -1,11 +1,36 @@
 <template>
   <div class="p-container mt_1">
+
+    <!-- Title Component -->
     <div class="p-row">
       <div class="p-col">
-        <AdminCommonTitle :title="pageTitle" :backLink="backLink"></AdminCommonTitle>
+        <AdminCommonTitle :title="pageTitle" :backLink="backLink">
+        </AdminCommonTitle>
       </div>
-
     </div>
+
+    <!-- Search Component -->
+    <div class="p-row mt_1" >
+        <div class="p-col">
+            <div class="p-content-body">
+              <transition name="global">
+                <UISearchContacts 
+                    @search="search" 
+                ></UISearchContacts>
+              </transition>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts Component -->
+    <div class="p-row">
+        <div class="p-col">
+            <transition name="global">
+              <AdminContactList></AdminContactList>
+            </transition>
+        </div>
+    </div>
+
   </div>
 </template>
 
@@ -14,10 +39,15 @@ export default {
   layout: 'admin',
   data() {
      return {
-      pageTitle: 'Contacts Requests',
+      pageTitle: 'Contact Requests',
       backLink: '/',
       showLoader: false,
      }
    },
+   methods: {
+     search() {
+
+     }
+   }
 }
 </script>

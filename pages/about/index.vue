@@ -4,13 +4,14 @@
 
       <div class="p-col">
         <AdminCommonTitle :title="pageTitle" :backLink="backLink">
-          <button slot="seo" @click="openSeo()" class="btn_ btn_primary"><i class="icon icon-graph-bar"></i> SEO</button>
+            <button slot="seo" @click="openSeo()" v-if="!showSEO" class="btn_ btn_primary"><i class="icon icon-graph-bar"></i> SEO</button>
+            <button slot="seo" @click="openSeo()" v-if="showSEO" class="btn_ btn_primary"><i class="icon icon-doc-text-inv"></i> Content</button>
         </AdminCommonTitle>
       </div>
 
     </div>
 
-    <transition name="inner-anim">
+    <transition name="global">
       <UIEditAbout
         v-if="!showSEO"
         @submitForm = "updateForm"
@@ -18,7 +19,7 @@
       </UIEditAbout>
     </transition>
 
-    <transition name="inner-anim">
+    <transition name="global">
       <UIPageSEO
         v-if="showSEO"
         @updateSEO="seoUpdate"
@@ -31,6 +32,13 @@
         <p><i class="icon icon-check-circle"></i> {{successMessage}}</p>
       </AdminFormSuccess>
     </transition>
+
+    <transition name="alertAnim">
+      <AdminFormErrorAlert v-if="errAlert">
+        <p><i class="icon icon-check-circle"></i> {{errorMessage}}</p>
+      </AdminFormErrorAlert>
+    </transition>
+
   </div>
 </template>
 
@@ -43,19 +51,21 @@ export default {
       pageTitle: 'About Section',
       backLink: '/',
       successMessage: '',
+      errorMessage: '',
       showSEO: false,
      }
    },
    computed: {
-     ...mapGetters(['showAlert']),
+     ...mapGetters(['showAlert', 'errAlert']),
    },
    methods: {
      async updateForm(value) {
        try{
-         this.$store.commit('activateLoader', true)
-         this.$store.dispatch('updatePost', value)
+        this.$store.commit('activateLoader', true)
+        this.$store.dispatch('updatePost', value)
        } catch(e) {
-         console.log(e)
+        this.errorMessage = e
+        this.$store.commit('activateErrAlert', true)
        } finally {
           setTimeout(()=> {
             this.$store.commit('activateLoader', false)
@@ -74,12 +84,13 @@ export default {
            col : 'aboutSEO',
            value: value
          })
+         this.successMessage = 'SEO Updated Successfully'
        }catch(e) {
-         console.log(e)
+         this.errorMessage = e
+        this.$store.commit('activateErrAlert', true)
        } finally {
           setTimeout(()=> {
             this.$store.commit('activateLoader', false)
-            this.successMessage = 'SEO Updated Successfully'
             this.$store.commit('activateAlert', true)
           },2000)
        }

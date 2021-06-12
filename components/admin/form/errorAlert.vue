@@ -1,16 +1,16 @@
 <template>
-  <div class="success_wrapper">
+  <div class="error_wrapper">
     <slot></slot>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .success_wrapper{
+  .error_wrapper{
     position: fixed;
     padding: 0.5em 1em;
     bottom:0;
     left:0;
-    background-color: $color-green;
+    background-color: $error;
     transform-origin: center;
     width: 100%;
     text-align: center;

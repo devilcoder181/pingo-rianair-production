@@ -1,6 +1,6 @@
 
   export const state = () => ({
-    aboutText: []
+    aboutText: [],
   });
   export const mutations = {
 
@@ -11,6 +11,7 @@
     updatePost(state, abtposts) {
       state.aboutText = abtposts;
     },
+
   };
   export const actions = {
 
@@ -23,8 +24,10 @@
       }).catch( (e)=> {
         console.log(e)
       })
+
     },
 
+ 
     setAboutPost(vuexContext, abtposts) {
       vuexContext.commit("setAboutPost", abtposts);
       //console.log(vuexContext)
@@ -39,7 +42,8 @@
       .catch( (e)=> {
         console.log(e)
       })
-    }
+    },
+
   };
   export const getters = {
     aboutText(state) {

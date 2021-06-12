@@ -41,3 +41,141 @@
   padding: 2rem;
   background-color: $color-dark;
 }
+
+
+// Table
+.custom_table_wrapper{
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $color-dark;
+
+  .table_head{
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 0.5fr 3fr 2fr 1fr 2fr;
+      grid-gap: 1rem;
+      padding: 1rem;
+
+       label {
+          display: block;
+          position: relative;
+          font-weight: 500;
+          width: 100%;
+          color: $color-text;
+          @include smText2();
+      }
+  }
+
+  .table_body{
+      position: relative;
+      display: block;
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &>li{
+          position: relative;
+          display: grid;
+          grid-template-columns: 0.5fr 3fr 2fr 1fr 2fr;
+          grid-gap: 1rem;
+          padding: 0.75rem 1rem;
+          align-items: center;
+          border-top: 1px solid $color-dark-2;
+          transition: all 0.3s ease;
+
+          &:hover{
+              background-color: $color-dark-2;
+          }
+
+          label {
+              display: block;
+              position: relative;
+              font-weight: 500;
+              width: 100%;
+              color: $color-white;
+              @include smText2();
+              &>{
+                span{
+                  display: block;
+                  @include smText();
+                  opacity: 0.5;
+                }
+              }
+          }
+
+          .index_{
+              position: relative;
+              display: block;
+
+              span{
+                  display: contents;
+                  color: $color-text;
+                  @include lgText();
+              }
+
+              .img_box{
+                position: relative;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                padding-top: 100%;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px $color-dark;
+
+                .img_{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-position: center;
+                  background-size: cover;
+                }
+              }
+          }
+
+          .action_{
+              position: relative;
+              list-style: none;
+              padding: 0;
+              margin: 0 -10px;
+              display: flex;
+              flex-wrap: wrap;
+
+              li{
+                  display: block;
+                  margin: 0 10px;
+                  position: relative;
+
+                  .link_{
+                      display: block;
+                      position: relative;
+                      color: $color-icon;
+                      transition: all 0.3s ease;
+                      @include mdText2;
+                      background: none;
+                      outline: none;
+                      border: none;
+                      &:hover{
+                          color: $color-primary;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  &.v_2{
+    .table_head{
+      grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr 2fr;
+    }
+
+    .table_body{
+      &>li{grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr 2fr;}
+      
+    }
+  }
+}

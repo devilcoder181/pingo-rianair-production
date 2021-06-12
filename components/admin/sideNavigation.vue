@@ -36,9 +36,11 @@
       return{
         app: [
           {name: 'Dashboard', link:'/', icon: 'icon icon-tachometer'},
+          {name: 'Banner', link:'/banner', icon: 'icon icon-image'},
           {name: 'About', link:'/about', icon: 'icon icon-doc-text-inv'},
           {name: 'Assistance', link:'/assistance', icon: 'icon icon-folder-open'},
-          {name: 'Products', link:'/products', icon: 'icon icon-suitcase'},
+          {name: 'Programs', link:'/programs', icon: 'icon icon-suitcase'},
+          {name: 'Testimonials', link:'/testimonials', icon: 'icon icon-comments'},
           {name: 'Contact', link:'/contact', icon: 'icon icon-person-stalker'},
           {name: 'Enquiry', link:'/enquiry', icon: 'icon icon-social-buffer'},
           {name: 'Gallery', link:'/gallery', icon: 'icon icon-images'},

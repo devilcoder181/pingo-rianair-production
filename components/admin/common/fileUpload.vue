@@ -66,11 +66,14 @@
       loader: {
         require: true
       },
+      fetchUrl: {
+        type: String
+      }
     },
     data() {
       return {
         myFile: null,
-        fileURL: null,
+        fileURL: this.fetchUrl,
       }
     },
     computed: {

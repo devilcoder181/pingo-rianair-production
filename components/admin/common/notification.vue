@@ -4,10 +4,10 @@
 
     <div class="notification_area">
       <div class="user_profile_image">
-        <img src="/profile_user.jpg" alt="Useranme">
+        <img src="/rian-air-og.png" alt="Useranme">
 
         <div class="user_details">
-          <label>Alan Sha Salim</label>
+          <label>Administrator</label>
           <span>Admin</span>
         </div>
 

@@ -46,6 +46,13 @@
         <p><i class="icon icon-check-circle"></i> {{successMessage}}</p>
       </AdminFormSuccess>
     </transition>
+
+    <transition name="alertAnim">
+      <AdminFormErrorAlert v-if="errAlert">
+        <p><i class="icon icon-check-circle"></i> {{errorMessage}}</p>
+      </AdminFormErrorAlert>
+    </transition>
+
     </div>
 </template>
 
@@ -59,10 +66,12 @@ export default {
             pageTitle: 'Edit Assistance',
             backLink: '/assistance',
             successMessage: '',
+            errorMessage: '',
+            fetchAssistanceContent:''
         }
     },
     computed: {
-     ...mapGetters(['showAlert', 'assistanceContent'],),
+     ...mapGetters(['showAlert', 'assistanceContent', 'errAlert'],),
     },
     methods: {
         async submit() {
@@ -71,7 +80,8 @@ export default {
             this.$store.commit('activateLoader', true)
             this.$store.dispatch('editAssistance', this.fetchAssistanceContent)
             } catch(e) {
-                console.log(e)
+                this.errorMessage = e
+                this.$store.commit('activateErrAlert', true)
             } finally {
                 setTimeout(()=> {
                     this.$store.commit('activateLoader', false)

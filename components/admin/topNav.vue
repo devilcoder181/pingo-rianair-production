@@ -8,11 +8,11 @@
 
       <div class="user_profile">
         <div class="user_details">
-          <label>Alan Sha Salim</label>
+          <label>Administrator</label>
           <span>Admin</span>
         </div>
         <div class="user_icon" @click="openNotifications()">
-          <img src="/profile_user.jpg" alt="Username">
+          <img src="/rian-air-og.png" alt="Username">
         </div>
       </div>
     </div>
