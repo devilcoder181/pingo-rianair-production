@@ -3,7 +3,7 @@
      <div class="search_bar">
          <label>Search Content</label>
           <div class="search_wrapper">
-        <input type="text" placeholder="Search..">
+        <input type="text" @keyup="search" v-model="searchString" placeholder="Search..">
         <i class="icon icon-search"></i>
       </div>
      </div>
@@ -20,7 +20,26 @@
 
 <script>
   export default {
-
+      props: {
+          rountLink: {
+              type: String,
+              require: true
+          },
+          buttonTitle: {
+            type: String,
+            require: true
+          }
+      },
+      data() {
+          return {
+              searchString: ''
+          }
+      },
+      methods: {
+          search() {
+              this.$emit('search', this.searchString)
+          }
+      }
   }
 
 </script>
@@ -33,7 +52,6 @@
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-gap: 2.5vw;
     align-items: center;
-
     label {
         display: block;
         position: relative;
