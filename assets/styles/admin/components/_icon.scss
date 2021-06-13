@@ -11,7 +11,6 @@
 
 }
 
-
 [data-icon]:before {
   font-family: "pingo-admin" !important;
   content: attr(data-icon);
@@ -214,4 +213,31 @@
 }
 .icon-plus-square:before {
   content: "\36";
+}
+.icon-user:before {
+  content: "\37";
+}
+.icon-sticky-note:before {
+  content: "\38";
+}
+.icon-terminal:before {
+  content: "\39";
+}
+.icon-comment-video:before {
+  content: "\21";
+}
+.icon-phone-square:before {
+  content: "\22";
+}
+.icon-envelope-square:before {
+  content: "\23";
+}
+.icon-whatsapp:before {
+  content: "\24";
+}
+.icon-whatsapp-1:before {
+  content: "\25";
+}
+.icon-whatsapp-2:before {
+  content: "\26";
 }

@@ -116,6 +116,12 @@
                   @include lgText();
               }
 
+              &.sm_{
+                span{
+                  @include mdText2();
+                }
+              }
+
               .img_box{
                 position: relative;
                 width: 100%;
@@ -166,6 +172,19 @@
               }
           }
       }
+
+      &.hover_{
+        li{
+          cursor: pointer;
+          &:hover{
+            background-color: $color-primary;
+          }
+
+          &.active_{
+            background-color: #2b2d35;
+          }
+        }
+      }
   }
 
   &.v_2{
@@ -177,5 +196,95 @@
       &>li{grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr 2fr;}
       
     }
+  }
+
+  &.v_3{
+    .table_head{
+      grid-template-columns: 0.5fr 2fr 2fr 1.5fr 1fr 1fr 2fr;
+    }
+
+    .table_body{
+      &>li{grid-template-columns: 0.5fr 2fr 2fr 1.5fr 1fr 1fr 2fr;}
+      
+    }
+  }
+
+  &.v_4{
+    .table_head{
+      grid-template-columns: 0.5fr 1.5fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr;
+    }
+
+    .table_body{
+      &>li{grid-template-columns: 0.5fr 1.5fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr;}
+      
+    }
+  }
+}
+
+.contact_title_wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3{
+    position: relative;
+    font-weight: 500;
+    color: $color-white;
+    @include mdText2();
+    margin: 0;
+
+    span{
+      display: block;
+      position: relative;
+      margin-top: 0.5em;
+      @include smText2();
+      color: $color-white;
+      background-color: $color-secondary;
+      padding: 0.5em;
+      border-radius: 0.15em;
+    }
+  }
+
+  .button_wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 -5px;
+
+    .btn_{
+      margin: 0 5px;
+    }
+
+  }
+
+}
+
+.p_details{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label{
+    display: block;
+    margin-bottom: 0.25em;
+    color: $color-text;
+    @include smText2();
+    font-weight: 500;
+  }
+
+  .holder_{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 3em;
+    color: $color-white;
+    padding: 0.5em 1em;
+    background-color: #202127;
+    border-radius: 0.25em;
+    @include mdText();
+    font-weight: 500;
   }
 }

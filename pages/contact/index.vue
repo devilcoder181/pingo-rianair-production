@@ -41,7 +41,6 @@ export default {
      return {
       pageTitle: 'Contact Requests',
       backLink: '/',
-      showLoader: false,
      }
    },
    methods: {
