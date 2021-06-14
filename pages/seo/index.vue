@@ -110,7 +110,7 @@ export default {
    },
    methods: {
      getURL(value) {
-        this.seo.ogImage = value
+        this.fetchSeo.ogImage = value
       },
       submit() {
        try{

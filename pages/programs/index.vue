@@ -38,9 +38,9 @@
 
     <!-- SEO Component -->
     <transition name="global">
-      <UIPageSEO
+     <UIPageSEO
         v-if="showSEO"
-        @updateSEO="seoUpdate"
+        doc="programSEO"
       >
       </UIPageSEO>
     </transition>
@@ -81,24 +81,6 @@ export default {
   methods: {
     openSeo() {
       this.showSEO = !this.showSEO;
-    },
-    async seoUpdate(value) {
-       try{
-         this.$store.commit('activateLoader', true)
-         this.$store.dispatch('addSEO', {
-           col : 'programsSEO',
-           value: value
-         })
-       }catch(e) {
-         this.errorMessage = e
-          this.$store.commit('activateErrAlert', true)
-       } finally {
-          setTimeout(()=> {
-            this.$store.commit('activateLoader', false)
-            this.successMessage = 'SEO Updated Successfully'
-            this.$store.commit('activateAlert', true)
-          },2000)
-       }
     },
     search(value) {
       this.$store.commit('searchProgram', value)

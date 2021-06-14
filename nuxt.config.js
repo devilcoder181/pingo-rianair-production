@@ -26,7 +26,9 @@ export default {
     scss: ['@/assets/styles/admin/components/_variables.scss', '@/assets/styles/admin/components/_mixin.scss']
   },
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/g-components'],
+  plugins: [
+  
+  ], 
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

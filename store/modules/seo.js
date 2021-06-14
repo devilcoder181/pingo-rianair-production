@@ -3,7 +3,7 @@ export const state = () => ({
 });
 export const mutations = {
   setSeo(state, abtposts) {
-    state.aboutText = abtposts;
+    state.seoContent = abtposts;
   },
 
   updateSeo(state, payload) {
@@ -13,7 +13,10 @@ export const mutations = {
          break;
       }
     }
+  },
 
+  addSeo(state, value) {
+    state.seoContent.push(value);
   },
 };
 export const actions = {
@@ -46,6 +49,18 @@ export const actions = {
       target.doc(payload.doc).update(payload.value)
       .then(res => {
         vuexContext.commit("updateSeo", {data: payload, id: payload.dov});
+      })
+      .catch( (e)=> {
+        console.log(e)
+      })
+    },
+
+    // Adding Data
+    addSeo(vuexContext, payload) {
+      const target =  this.$fire.firestore.collection('seo')
+      target.doc(payload.doc).set(payload.value)
+      .then(res => {
+        vuexContext.commit("addSeo", payload);
       })
       .catch( (e)=> {
         console.log(e)

@@ -46,7 +46,7 @@
         <div class="p-content-body">
           <h3 class="dash_title">Client Graph</h3>
           <div class="graph_wrapper">
-
+            <UIDashChart></UIDashChart>
           </div>
         </div>
 
@@ -54,7 +54,8 @@
 
       <div class="p-col-4">
         <div class="p-content-body">
-
+          <h3 class="dash_title">Site Reach</h3>
+          <UIDashReach></UIDashReach>
         </div>
       </div>
     </div>

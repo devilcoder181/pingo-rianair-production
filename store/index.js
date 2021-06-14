@@ -6,6 +6,7 @@ import * as assistance from "./modules/assistance";
 import * as programs from "./modules/programs";
 import * as testimonials from "./modules/testimonials";
 import * as contact from "./modules/contact";
+import * as gallery from "./modules/gallery";
 import * as enquiry from "./modules/enquiry";
 import * as social from "./modules/social";
 import * as loader from "./modules/loader";
@@ -23,6 +24,7 @@ const createStore = () => {
       testimonials,
       contact,
       enquiry,
+      gallery,
       social,
       banner,
       loader,

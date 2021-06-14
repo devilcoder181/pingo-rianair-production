@@ -22,7 +22,7 @@
     <transition name="global">
       <UIPageSEO
         v-if="showSEO"
-        @updateSEO="seoUpdate"
+        doc="aboutSEO"
       >
       </UIPageSEO>
     </transition>
@@ -77,24 +77,6 @@ export default {
      openSeo() {
        this.showSEO = !this.showSEO;
      },
-     async seoUpdate(value) {
-       try{
-         this.$store.commit('activateLoader', true)
-         this.$store.dispatch('addSEO', {
-           col : 'aboutSEO',
-           value: value
-         })
-         this.successMessage = 'SEO Updated Successfully'
-       }catch(e) {
-         this.errorMessage = e
-        this.$store.commit('activateErrAlert', true)
-       } finally {
-          setTimeout(()=> {
-            this.$store.commit('activateLoader', false)
-            this.$store.commit('activateAlert', true)
-          },2000)
-       }
-     }
    }
 }
 </script>
