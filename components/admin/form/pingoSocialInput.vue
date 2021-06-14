@@ -3,7 +3,7 @@
     <label>{{title}}</label>
     <div class="input_">
         <div class="icon_">
-            <i class="icon icon-phone-square"></i>
+            <i :class="icon"></i>
         </div>
         <input :value="text" @input="$emit('update:text', $event.target.value)" type="text">
     </div>
@@ -18,6 +18,10 @@ export default {
       type: String,
     },
     text: {
+      type: String,
+      require: true,
+    },
+    icon: {
       type: String,
       require: true,
     }

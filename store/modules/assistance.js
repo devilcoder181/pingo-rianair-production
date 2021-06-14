@@ -34,7 +34,7 @@
 
     searchAssistance(state, value) {
       let searchState = state.assistanceContent
-  
+
       if (value != '' && value) {
         searchState = searchState.filter((item) => {
               return item.title
@@ -120,5 +120,8 @@
     searchAssistanceContent(state) {
       return state.searchAssistanceContent;
     },
+    assistanceLength(state) {
+      return state.searchAssistanceContent.length
+    }
   };
 

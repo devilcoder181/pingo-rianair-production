@@ -1,34 +1,25 @@
 <template>
 
-    <div class="custom_table_wrapper v_3">
+    <div class="custom_table_wrapper mini_">
         <div class="table_head">
-            <label>Index</label>
             <label>Name</label>
             <label>Email</label>
-            <label>Phone</label>
             <label>Date</label>
-            <label>Country</label>
-            <label>IP</label>
         </div>
 
 
         <ul class="table_body hover_">
 
             <li
-            v-for="(item, index) in searchContactContent"
+            v-for="(item, index) in searchContactContent.slice(0, 5)"
             :key="index"
             @click="getMeInside(item.id)"
             :class="{active_: item.isActive}"
             >
-                <div class="index_ sm_">
-                    <span class="icon icon-user"></span>
-                </div>
+
                  <label>{{item.name}}</label>
                  <label>{{item.email}}</label>
-                 <label>{{item.phone}}</label>
                  <label>{{assignDate(item.setDate)}}</label>
-                 <label>{{item.country}}</label>
-                 <label>{{item.ip}}</label>
             </li>
 
         </ul>

@@ -69,6 +69,11 @@
     z-index: 99999;
     top: 0;
     left: 0;
+    overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
     &:before{
       content: '';

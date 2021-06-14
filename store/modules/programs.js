@@ -119,4 +119,7 @@ export const actions = {
     searchProgramContent(state) {
       return state.searchProgramContent;
     },
+    programLength(state) {
+      return state.searchProgramContent.length
+    }
   };

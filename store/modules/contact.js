@@ -20,7 +20,7 @@ export const state = () => ({
 
     searchContact(state, value) {
       let searchState = state.contactContent
-  
+
       if (value != '' && value) {
         searchState = searchState.filter((item) => {
               return item.title
@@ -105,4 +105,7 @@ export const state = () => ({
     searchContactContent(state) {
       return state.searchContactContent;
     },
+    contactLength(state) {
+      return state.searchContactContent.length
+    }
   };

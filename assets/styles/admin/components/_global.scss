@@ -113,3 +113,19 @@ ul,ol{
 .global-enter-active, .global-leave-active{
   transition: all 0.4s ease;
 }
+
+.dash_title{
+  display: block;
+  color: $color-white;
+  @include mdText();
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+}
+
+.graph_wrapper{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 30vh;
+}

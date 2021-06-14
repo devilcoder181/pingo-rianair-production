@@ -20,7 +20,7 @@ export const state = () => ({
 
     searchEnquiry(state, value) {
       let searchState = state.enquiryContent
-  
+
       if (value != '' && value) {
         searchState = searchState.filter((item) => {
               return item.title
@@ -105,4 +105,7 @@ export const state = () => ({
     searchEnquiryContent(state) {
       return state.searchEnquiryContent;
     },
+    enquiryLength(state) {
+      return state.searchEnquiryContent.length
+    }
   };

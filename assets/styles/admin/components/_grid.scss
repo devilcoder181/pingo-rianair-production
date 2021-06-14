@@ -40,6 +40,7 @@
   width: 100%;
   padding: 2rem;
   background-color: $color-dark;
+  border-radius: 2em;
 }
 
 
@@ -194,7 +195,7 @@
 
     .table_body{
       &>li{grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr 2fr;}
-      
+
     }
   }
 
@@ -205,7 +206,7 @@
 
     .table_body{
       &>li{grid-template-columns: 0.5fr 2fr 2fr 1.5fr 1fr 1fr 2fr;}
-      
+
     }
   }
 
@@ -216,7 +217,18 @@
 
     .table_body{
       &>li{grid-template-columns: 0.5fr 1.5fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr;}
-      
+
+    }
+  }
+
+  &.mini_{
+    .table_head{
+      grid-template-columns:2fr 2fr  1fr;
+    }
+
+    .table_body{
+      &>li{grid-template-columns: 2fr 2fr 1fr;}
+
     }
   }
 }

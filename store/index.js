@@ -7,6 +7,7 @@ import * as programs from "./modules/programs";
 import * as testimonials from "./modules/testimonials";
 import * as contact from "./modules/contact";
 import * as enquiry from "./modules/enquiry";
+import * as social from "./modules/social";
 import * as loader from "./modules/loader";
 import * as alert from "./modules/alertMessages";
 import * as seo from "./modules/seo";
@@ -22,6 +23,7 @@ const createStore = () => {
       testimonials,
       contact,
       enquiry,
+      social,
       banner,
       loader,
       alert,
