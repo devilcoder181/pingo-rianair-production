@@ -57,13 +57,13 @@ export default {
   firebase: {
     // ...
     config: {
-      apiKey: "AIzaSyDMkjSdCNGCldWgWWCdQPwat-mLAojcSdw",
+      apiKey: process.env.FIRE_APIKEY,
       authDomain: "pingo-rianair-2f72e.firebaseapp.com",
       projectId: "pingo-rianair-2f72e",
       storageBucket: "pingo-rianair-2f72e.appspot.com",
-      messagingSenderId: "273896716312",
-      appId: "1:273896716312:web:13cf68da448f23564ceb6d",
-      measurementId: "G-6TV65CMWTB"
+      messagingSenderId: process.env.FIRE_MESID,
+      appId: process.env.FIRE_APPID,
+      measurementId: process.env.FIRE_MESURID
     },
     services: {  
       auth: {
