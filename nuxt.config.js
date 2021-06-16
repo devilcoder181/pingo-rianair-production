@@ -89,8 +89,4 @@ export default {
       dev: process.env.NODE_ENV === 'production',
     },
   },
-
-  server: {
-    port: 8000 // default: 3000
-  }
 }
