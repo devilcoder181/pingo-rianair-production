@@ -71,21 +71,13 @@ export default {
           onAuthStateChangedAction: 'onAuthStateChanged',
         },
         ssr: true,
-        emulatorPort: isDev && useEmulators ? 9099 : undefined,
         disableEmulatorWarnings: false,
       },
       firestore: {
         memoryOnly: false,
         enablePersistence: true,
-        emulatorPort: isDev && useEmulators ? 8080 : undefined,
-      },
-      functions: {
-        emulatorPort: isDev && useEmulators ? 12345 : undefined,
       },
       storage: true,
-      database: {
-        emulatorPort: isDev && useEmulators ? 9000 : undefined,
-      },
       performance: false,
       analytics: false,
     },
@@ -94,8 +86,6 @@ export default {
   pwa: {
     workbox: {
       importScripts: ['/firebase-auth-sw.js'],
-      // by default the workbox module will not install the service worker in dev environment to avoid conflicts with HMR
-      // only set this true for testing and remember to always clear your browser cache in development
       dev: process.env.NODE_ENV === 'production',
     },
   },

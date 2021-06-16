@@ -1,8 +1,5 @@
 {
   "scripts": {
-    "layer0:dev": "layer0 dev",
-    "layer0:build": "layer0 build",
-    "layer0:deploy": "layer0 deploy",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -19,12 +16,6 @@
     "@nuxt/core": "^2.15.6"
   },
   "devDependencies": {
-    "@layer0/cli": "^3.13.3",
-    "@layer0/core": "^3.13.3",
-    "@layer0/devtools": "^3.13.3",
-    "@layer0/nuxt": "^3.13.3",
-    "@layer0/prefetch": "^3.13.3",
-    "@layer0/vue": "^3.13.3",
     "@nuxtjs/style-resources": "^1.0.0",
     "fibers": "^5.0.0",
     "node-sass": "^6.0.0",
