@@ -5,6 +5,9 @@
   "AdminAssistanceList": {
     "description": "Auto imported from components/admin/assistanceList.vue"
   },
+  "AdminBottomNav": {
+    "description": "Auto imported from components/admin/bottomNav.vue"
+  },
   "AdminContactList": {
     "description": "Auto imported from components/admin/contactList.vue"
   },
@@ -22,6 +25,9 @@
   },
   "AdminTopNav": {
     "description": "Auto imported from components/admin/topNav.vue"
+  },
+  "AdminTopNavMobile": {
+    "description": "Auto imported from components/admin/topNavMobile.vue"
   },
   "UIAlertDelete": {
     "description": "Auto imported from components/UI/alertDelete.vue"

@@ -95,6 +95,11 @@
       opacity: 0.8;
     }
 
+    .navigation_list{
+      @media only screen and (max-width:767px){
+        display: none;
+      }
+    }
     .notification_area {
       position: absolute;
       top: 0;
@@ -105,6 +110,11 @@
       padding: 2.5vw 1.5vw;
       display: flex;
       flex-direction: column;
+
+      @media only screen and (max-width:767px){
+        width: 60vw;
+        padding: 10vw 5vw;
+      }
 
       .user_profile_image {
         position: relative;
@@ -118,6 +128,11 @@
           width: 7vw;
           height: 7vw;
           border-radius: 50%;
+
+          @media only screen and (max-width:767px){
+            width: 25vw;
+            height: 25vw;
+          }
         }
 
         .user_details {
@@ -132,6 +147,10 @@
             line-height: 1.2;
             color: $color-white;
 
+            @media only screen and (max-width:767px){
+             font-size: 18px;
+            }
+
           }
 
           span {
@@ -139,6 +158,9 @@
             line-height: 1;
             font-size: 0.95vw;
             color: $color-text;
+            @media only screen and (max-width:767px){
+             font-size: 16px;
+            }
           }
         }
 

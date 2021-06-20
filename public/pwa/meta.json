@@ -43,7 +43,7 @@
     {
       "hid": "theme-color",
       "name": "theme-color",
-      "content": "#191a1f"
+      "content": "#1b1c22"
     },
     {
       "hid": "og:type",
@@ -141,7 +141,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.19427e2b.json",
+      "href": "/_nuxt/manifest.d45a81e8.json",
       "hid": "manifest"
     }
   ],

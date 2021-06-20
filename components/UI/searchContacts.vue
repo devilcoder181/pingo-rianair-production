@@ -55,6 +55,10 @@
     grid-template-columns: 1fr 0.75fr 0.75fr;
     grid-gap: 2.5vw;
     align-items: center;
+
+     @media only screen and (max-width:767px){
+       grid-template-columns: 1fr;
+     }
     label {
         display: block;
         position: relative;
@@ -70,6 +74,13 @@
       position: relative;
       display: block;
 
+      @media only screen and (max-width:767px){
+        display: none;
+
+        &:nth-child(1){
+          display: block;
+        }
+      }
 
 
       .search_wrapper {
@@ -87,6 +98,12 @@
           transform: translateY(-50%);
           display: block;
           text-align: center;
+
+          @media only screen and (max-width:767px){
+            font-size: 20px;
+            left: auto;
+            right: 18px;
+          }
         }
 
         input {
@@ -104,6 +121,12 @@
           border-radius: 0.25em;
           transition: all 0.3s ease;
           padding-left: 3vw;
+
+          @media only screen and (max-width:767px){
+            padding-left: 15px;
+            padding-right: 40px;
+            font-size: 15px;
+          }
 
           &:focus {
             box-shadow: none;

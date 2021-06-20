@@ -12,6 +12,7 @@ const _bb5a8306 = () => interopDefault(import('..\\pages\\enquiry\\index.vue' /*
 const _0a61f6e4 = () => interopDefault(import('..\\pages\\gallery\\index.vue' /* webpackChunkName: "pages/gallery/index" */))
 const _3e25fd97 = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
 const _926b3550 = () => interopDefault(import('..\\pages\\logout.vue' /* webpackChunkName: "pages/logout" */))
+const _70276720 = () => interopDefault(import('..\\pages\\mob\\index.vue' /* webpackChunkName: "pages/mob/index" */))
 const _950d18b6 = () => interopDefault(import('..\\pages\\programs\\index.vue' /* webpackChunkName: "pages/programs/index" */))
 const _637d74ba = () => interopDefault(import('..\\pages\\seo\\index.vue' /* webpackChunkName: "pages/seo/index" */))
 const _229ebe67 = () => interopDefault(import('..\\pages\\social\\index.vue' /* webpackChunkName: "pages/social/index" */))
@@ -72,6 +73,10 @@ export const routerOptions = {
     path: "/logout",
     component: _926b3550,
     name: "logout"
+  }, {
+    path: "/mob",
+    component: _70276720,
+    name: "mob"
   }, {
     path: "/programs",
     component: _950d18b6,

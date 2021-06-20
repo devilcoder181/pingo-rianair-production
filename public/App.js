@@ -11,8 +11,9 @@ import '..\\assets\\styles\\admin\\pingo-admin.scss'
 import _77068119 from '..\\layouts\\admin.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
 import _77a66d33 from '..\\layouts\\login.vue'
+import _7ed9cc18 from '..\\layouts\\mobile.vue'
 
-const layouts = { "_admin": sanitizeComponent(_77068119),"_default": sanitizeComponent(_6f6c098b),"_login": sanitizeComponent(_77a66d33) }
+const layouts = { "_admin": sanitizeComponent(_77068119),"_default": sanitizeComponent(_6f6c098b),"_login": sanitizeComponent(_77a66d33),"_mobile": sanitizeComponent(_7ed9cc18) }
 
 export default {
   render (h, props) {

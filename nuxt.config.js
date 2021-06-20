@@ -95,13 +95,13 @@ export default {
       name: 'Pingo Admin - RianAir',
       author: 'DevilCoder181',
       description: 'Pingo CMS pannel for RianAir Website',
-      theme_color: '#191a1f',
+      theme_color: '#1b1c22',
 
     },
     manifest: {
       name: 'Pingo Admin - RianAir',
       description: 'Pingo CMS pannel for RianAir Website',
-      background_color: '#191a1f',
+      background_color: '#1b1c22',
     },
     workbox: {
       importScripts: ['/firebase-auth-sw.js'],
