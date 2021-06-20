@@ -1,0 +1,11 @@
+---
+application:
+  name: "pingo-rianair-production"
+  project: "rianair-pingo"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-pingo-rianair-production"
+  routes:
+  - application_name: "pingo-rianair-production"
+    paths:
+    - "/*"
