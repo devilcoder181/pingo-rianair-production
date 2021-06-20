@@ -25,7 +25,7 @@
     </div>
 
     <div class="footer_">
-      <span>wwww.admin-pingo.com</span>
+      <span>www.admin-pingo.com</span>
     </div>
 
     <transition name="slide-up">
@@ -77,13 +77,21 @@ export default {
     },
      methods: {
       async onLogin() {
+
+        const winWidth = window.innerWidth;
+
         this.showLoader = true;
         try {
           await this.$fire.auth.signInWithEmailAndPassword(
             this.login.email,
             this.login.password
           )
-        this.$router.push("/");
+          if(winWidth < 768){
+            this.$router.push("/mob/");
+          }else{
+            this.$router.push("/");
+          }
+        
         } catch (e) {
           this.errorMessage = e;
           this.validError = true;
@@ -149,6 +157,11 @@ export default {
       z-index: 1;
       transition: all 0.8s ease;
 
+      @media only screen and (max-width:767px){
+        width: 85%;
+        padding: 7.5vw;
+      }
+
 
         &.form_error{
           box-shadow: 1px 1px 16px #e0170030;
@@ -162,6 +175,9 @@ export default {
         align-content: center;
         justify-content: center;
 
+        @media only screen and (max-width:767px){
+          height: 10vh;
+        }
 
         img{
           width: auto;
@@ -197,6 +213,11 @@ export default {
             border:1px solid $color-primary;
           }
 
+          @media only screen and (max-width:767px){
+            font-size: 15px;
+
+          }
+
         }
 
         button{
@@ -212,10 +233,20 @@ export default {
         text-align: start;
         width: 100%;
         margin: 1.5vw 0 0;
+
+        @media only screen and (max-width:767px){
+            margin-top: 1.5em;
+          }
+
         a{
           font-size: 0.8vw;
           font-weight: 300;
           color: $color-text;
+
+          @media only screen and (max-width:767px){
+            font-size: 14px;
+            margin-top: 1.5em;
+          }
 
           &:hover{
             color: $color-secondary;

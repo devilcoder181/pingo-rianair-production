@@ -1,0 +1,92 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "AdminAssistanceList": {
+    "description": "Auto imported from components/admin/assistanceList.vue"
+  },
+  "AdminContactList": {
+    "description": "Auto imported from components/admin/contactList.vue"
+  },
+  "AdminEnquiryList": {
+    "description": "Auto imported from components/admin/enquiryList.vue"
+  },
+  "AdminProgramList": {
+    "description": "Auto imported from components/admin/programList.vue"
+  },
+  "AdminSideNavigation": {
+    "description": "Auto imported from components/admin/sideNavigation.vue"
+  },
+  "AdminTestiList": {
+    "description": "Auto imported from components/admin/testiList.vue"
+  },
+  "AdminTopNav": {
+    "description": "Auto imported from components/admin/topNav.vue"
+  },
+  "UIAlertDelete": {
+    "description": "Auto imported from components/UI/alertDelete.vue"
+  },
+  "UIDashChart": {
+    "description": "Auto imported from components/UI/dashChart.vue"
+  },
+  "UIDashContact": {
+    "description": "Auto imported from components/UI/dashContact.vue"
+  },
+  "UIDashEnquiry": {
+    "description": "Auto imported from components/UI/dashEnquiry.vue"
+  },
+  "UIDashReach": {
+    "description": "Auto imported from components/UI/dashReach.vue"
+  },
+  "UIEditAbout": {
+    "description": "Auto imported from components/UI/editAbout.vue"
+  },
+  "UIImageWidget": {
+    "description": "Auto imported from components/UI/imageWidget.vue"
+  },
+  "UIPageSEO": {
+    "description": "Auto imported from components/UI/pageSEO.vue"
+  },
+  "UISearchContacts": {
+    "description": "Auto imported from components/UI/searchContacts.vue"
+  },
+  "UISearchFilter": {
+    "description": "Auto imported from components/UI/searchFilter.vue"
+  },
+  "AdminCommonFileUpload": {
+    "description": "Auto imported from components/admin/common/fileUpload.vue"
+  },
+  "AdminCommonNavLink": {
+    "description": "Auto imported from components/admin/common/navLink.vue"
+  },
+  "AdminCommonNotification": {
+    "description": "Auto imported from components/admin/common/notification.vue"
+  },
+  "AdminCommonPngLoader": {
+    "description": "Auto imported from components/admin/common/png-loader.vue"
+  },
+  "AdminCommonTitle": {
+    "description": "Auto imported from components/admin/common/title.vue"
+  },
+  "AdminCommonWidget": {
+    "description": "Auto imported from components/admin/common/widget.vue"
+  },
+  "AdminFormError": {
+    "description": "Auto imported from components/admin/form/error.vue"
+  },
+  "AdminFormErrorAlert": {
+    "description": "Auto imported from components/admin/form/errorAlert.vue"
+  },
+  "AdminFormPingoInput": {
+    "description": "Auto imported from components/admin/form/pingoInput.vue"
+  },
+  "AdminFormPingoSocialInput": {
+    "description": "Auto imported from components/admin/form/pingoSocialInput.vue"
+  },
+  "AdminFormPingoTextarea": {
+    "description": "Auto imported from components/admin/form/pingoTextarea.vue"
+  },
+  "AdminFormSuccess": {
+    "description": "Auto imported from components/admin/form/success.vue"
+  }
+}

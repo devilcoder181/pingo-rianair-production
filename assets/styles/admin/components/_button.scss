@@ -16,6 +16,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
+
   &:hover, &:focus, &:active{
     box-shadow: 1px 1px 10px $color-primary;
     background-color: darken($color-primary, 2%);
@@ -51,6 +55,10 @@
   color: $color-white;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
 
   &:hover, &:focus, &:active{
     box-shadow: 1px 1px 10px $error;
@@ -94,6 +102,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
+
   &:hover, &:focus, &:active{
     box-shadow: 1px 1px 10px $color-secondary;
     background-color: darken($color-secondary, 2%);
@@ -129,6 +141,10 @@
   color: $color-white;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
 
   &:hover, &:focus, &:active{
     box-shadow: 1px 1px 10px $color-green;
@@ -169,6 +185,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
+
   &:hover, &:focus, &:active{
     background-color: darken($border-color, 2%);
   }
@@ -203,6 +223,10 @@
   color: $color-white;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @media only screen and (max-width:767px){
+    font-size: 15px;
+  }
 
   &:hover, &:focus, &:active{
     background-color: darken($border-color, 2%);

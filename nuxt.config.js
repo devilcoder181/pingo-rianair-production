@@ -35,13 +35,13 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    '@nuxtjs/firebase',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/pwa',
+    '@nuxtjs/firebase',
     '@nuxtjs/style-resources',
     '@nuxtjs/dotenv'
   ],
@@ -86,6 +86,23 @@ export default {
   },
 
   pwa: {
+    icon: {
+      source: 'static/pwa-icon.png'
+    },
+    meta: {
+      mobileApp: true,
+      mobileAppIOS: true,
+      name: 'Pingo Admin - RianAir',
+      author: 'DevilCoder181',
+      description: 'Pingo CMS pannel for RianAir Website',
+      theme_color: '#191a1f',
+
+    },
+    manifest: {
+      name: 'Pingo Admin - RianAir',
+      description: 'Pingo CMS pannel for RianAir Website',
+      background_color: '#191a1f',
+    },
     workbox: {
       importScripts: ['/firebase-auth-sw.js'],
       dev: process.env.NODE_ENV === 'production',
