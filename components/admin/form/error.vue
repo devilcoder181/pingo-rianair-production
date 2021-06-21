@@ -16,6 +16,11 @@
     border-radius: 0.5em;
     text-align: center;
     transform-origin: center;
+
+    @media only screen and (max-width:767px){
+      width:90%;
+    }
+
     p{
       color: #fff;
       position: relative;

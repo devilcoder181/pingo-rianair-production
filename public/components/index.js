@@ -5,6 +5,7 @@ export { default as AdminAssistanceList } from '../..\\components\\admin\\assist
 export { default as AdminBottomNav } from '../..\\components\\admin\\bottomNav.vue'
 export { default as AdminContactList } from '../..\\components\\admin\\contactList.vue'
 export { default as AdminEnquiryList } from '../..\\components\\admin\\enquiryList.vue'
+export { default as AdminMobenquirylist } from '../..\\components\\admin\\mobenquirylist.vue'
 export { default as AdminProgramList } from '../..\\components\\admin\\programList.vue'
 export { default as AdminSideNavigation } from '../..\\components\\admin\\sideNavigation.vue'
 export { default as AdminTestiList } from '../..\\components\\admin\\testiList.vue'
@@ -38,6 +39,7 @@ export const LazyAdminAssistanceList = import('../..\\components\\admin\\assista
 export const LazyAdminBottomNav = import('../..\\components\\admin\\bottomNav.vue' /* webpackChunkName: "components/admin-bottom-nav" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminContactList = import('../..\\components\\admin\\contactList.vue' /* webpackChunkName: "components/admin-contact-list" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminEnquiryList = import('../..\\components\\admin\\enquiryList.vue' /* webpackChunkName: "components/admin-enquiry-list" */).then(c => wrapFunctional(c.default || c))
+export const LazyAdminMobenquirylist = import('../..\\components\\admin\\mobenquirylist.vue' /* webpackChunkName: "components/admin-mobenquirylist" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminProgramList = import('../..\\components\\admin\\programList.vue' /* webpackChunkName: "components/admin-program-list" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminSideNavigation = import('../..\\components\\admin\\sideNavigation.vue' /* webpackChunkName: "components/admin-side-navigation" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminTestiList = import('../..\\components\\admin\\testiList.vue' /* webpackChunkName: "components/admin-testi-list" */).then(c => wrapFunctional(c.default || c))

@@ -13,13 +13,13 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_72f62273 from 'nuxt_plugin_plugin_72f62273' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_serviceauthssrserver_497a406c from 'nuxt_plugin_serviceauthssrserver_497a406c' // Source: .\\firebase\\service.auth.ssr-server.js (mode: 'server')
-import nuxt_plugin_index_ed852f36 from 'nuxt_plugin_index_ed852f36' // Source: .\\firebase\\index.js (mode: 'all')
-import nuxt_plugin_serviceauthinitialize_ccd71a0c from 'nuxt_plugin_serviceauthinitialize_ccd71a0c' // Source: .\\firebase\\service.auth.initialize.js (mode: 'all')
-import nuxt_plugin_workbox_929d1a9c from 'nuxt_plugin_workbox_929d1a9c' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_d8c0d59c from 'nuxt_plugin_metaplugin_d8c0d59c' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_cf718ab4 from 'nuxt_plugin_iconplugin_cf718ab4' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
+import nuxt_plugin_plugin_30182054 from 'nuxt_plugin_plugin_30182054' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_serviceauthssrserver_b61cbeae from 'nuxt_plugin_serviceauthssrserver_b61cbeae' // Source: .\\firebase\\service.auth.ssr-server.js (mode: 'server')
+import nuxt_plugin_index_c7db643c from 'nuxt_plugin_index_c7db643c' // Source: .\\firebase\\index.js (mode: 'all')
+import nuxt_plugin_serviceauthinitialize_15e85992 from 'nuxt_plugin_serviceauthinitialize_15e85992' // Source: .\\firebase\\service.auth.initialize.js (mode: 'all')
+import nuxt_plugin_workbox_2a0b0fd5 from 'nuxt_plugin_workbox_2a0b0fd5' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_49314156 from 'nuxt_plugin_metaplugin_49314156' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_3fe1f66e from 'nuxt_plugin_iconplugin_3fe1f66e' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -87,7 +87,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"pingo-admin","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-capable","name":"apple-mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-status-bar-style","name":"apple-mobile-web-app-status-bar-style","content":"default"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Pingo Admin - RianAir"},{"hid":"author","name":"author","content":"DevilCoder181"},{"hid":"theme-color","name":"theme-color","content":"#1b1c22"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"Pingo Admin - RianAir"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"Pingo Admin - RianAir"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Pingo CMS pannel for RianAir Website"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.e70ab9.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.e70ab9.png","sizes":"512x512"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphonese_640x1136.e70ab9.png","media":"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphonese"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphone6_50x1334.e70ab9.png","media":"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphone6"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphoneplus_1080x1920.e70ab9.png","media":"(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphoneplus"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphonex_1125x2436.e70ab9.png","media":"(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphonex"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphonexr_828x1792.e70ab9.png","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphonexr"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_iphonexsmax_1242x2688.e70ab9.png","media":"(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-iphonexsmax"},{"href":"\u002F_nuxt\u002Ficons\u002Fsplash_ipad_1536x2048.e70ab9.png","media":"(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-ipad"},{"media":"(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-ipadpro1"},{"media":"(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-ipadpro2"},{"media":"(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)","rel":"apple-touch-startup-image","hid":"apple-touch-startup-image-ipadpro3"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.d45a81e8.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"pingo-admin","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -216,32 +216,32 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_72f62273 === 'function') {
-    await nuxt_plugin_plugin_72f62273(app.context, inject)
+  if (typeof nuxt_plugin_plugin_30182054 === 'function') {
+    await nuxt_plugin_plugin_30182054(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_serviceauthssrserver_497a406c === 'function') {
-    await nuxt_plugin_serviceauthssrserver_497a406c(app.context, inject)
+  if (process.server && typeof nuxt_plugin_serviceauthssrserver_b61cbeae === 'function') {
+    await nuxt_plugin_serviceauthssrserver_b61cbeae(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_index_ed852f36 === 'function') {
-    await nuxt_plugin_index_ed852f36(app.context, inject)
+  if (typeof nuxt_plugin_index_c7db643c === 'function') {
+    await nuxt_plugin_index_c7db643c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_serviceauthinitialize_ccd71a0c === 'function') {
-    await nuxt_plugin_serviceauthinitialize_ccd71a0c(app.context, inject)
+  if (typeof nuxt_plugin_serviceauthinitialize_15e85992 === 'function') {
+    await nuxt_plugin_serviceauthinitialize_15e85992(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_929d1a9c === 'function') {
-    await nuxt_plugin_workbox_929d1a9c(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_2a0b0fd5 === 'function') {
+    await nuxt_plugin_workbox_2a0b0fd5(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_d8c0d59c === 'function') {
-    await nuxt_plugin_metaplugin_d8c0d59c(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_49314156 === 'function') {
+    await nuxt_plugin_metaplugin_49314156(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_iconplugin_cf718ab4 === 'function') {
-    await nuxt_plugin_iconplugin_cf718ab4(app.context, inject)
+  if (typeof nuxt_plugin_iconplugin_3fe1f66e === 'function') {
+    await nuxt_plugin_iconplugin_3fe1f66e(app.context, inject)
   }
 
   // Lock enablePreview in context

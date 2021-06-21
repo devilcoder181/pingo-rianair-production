@@ -86,6 +86,8 @@ export default {
   },
 
   pwa: {
+    name: "Pingo Admin - RianAir",
+    short_name: "Pingo Admin - RianAir",
     icon: {
       source: 'static/pwa-icon.png'
     },

@@ -43,7 +43,7 @@
                 text-align: center;
                 flex-direction: column;
                 transition: all 0.3s ease;
-                padding: 0.5em;
+                padding: 0.5em 0.5em 1.5em;
 
                 &.nuxt-link-exact-active{
                     background: $color-primary;

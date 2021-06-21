@@ -21,6 +21,13 @@
         </div>
 
         <!-- Contacts Component -->
+    <div class="p-row">
+        <div class="p-col">     
+            <transition name="global">
+                <AdminMobenquirylist></AdminMobenquirylist>
+            </transition>
+        </div>
+    </div>
    
 
     </div>
@@ -35,6 +42,11 @@ export default {
       backLink: '/',
      }
    },
+   methods: {
+     search(value) {
+       this.$store.commit('searchEnquiry', value)
+     }
+   }
 }
 </script>
 

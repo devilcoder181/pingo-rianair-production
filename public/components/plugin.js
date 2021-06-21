@@ -7,6 +7,7 @@ const components = {
   AdminBottomNav: () => import('../..\\components\\admin\\bottomNav.vue' /* webpackChunkName: "components/admin-bottom-nav" */).then(c => wrapFunctional(c.default || c)),
   AdminContactList: () => import('../..\\components\\admin\\contactList.vue' /* webpackChunkName: "components/admin-contact-list" */).then(c => wrapFunctional(c.default || c)),
   AdminEnquiryList: () => import('../..\\components\\admin\\enquiryList.vue' /* webpackChunkName: "components/admin-enquiry-list" */).then(c => wrapFunctional(c.default || c)),
+  AdminMobenquirylist: () => import('../..\\components\\admin\\mobenquirylist.vue' /* webpackChunkName: "components/admin-mobenquirylist" */).then(c => wrapFunctional(c.default || c)),
   AdminProgramList: () => import('../..\\components\\admin\\programList.vue' /* webpackChunkName: "components/admin-program-list" */).then(c => wrapFunctional(c.default || c)),
   AdminSideNavigation: () => import('../..\\components\\admin\\sideNavigation.vue' /* webpackChunkName: "components/admin-side-navigation" */).then(c => wrapFunctional(c.default || c)),
   AdminTestiList: () => import('../..\\components\\admin\\testiList.vue' /* webpackChunkName: "components/admin-testi-list" */).then(c => wrapFunctional(c.default || c)),

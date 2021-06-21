@@ -2,151 +2,176 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\about\\\\index.vue",
-    "chunkName": "pages/about/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\about\\\\index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_2c778046"
   },
   {
     "name": "assistance",
     "path": "/assistance",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\index.vue",
-    "chunkName": "pages/assistance/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\index.vue",
+    "chunkName": "pages/assistance/index",
+    "_name": "_e1fef96e"
   },
   {
     "name": "banner",
     "path": "/banner",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\banner\\\\index.vue",
-    "chunkName": "pages/banner/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\banner\\\\index.vue",
+    "chunkName": "pages/banner/index",
+    "_name": "_6a960e55"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\contact\\\\index.vue",
-    "chunkName": "pages/contact/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\contact\\\\index.vue",
+    "chunkName": "pages/contact/index",
+    "_name": "_4dec50da"
   },
   {
     "name": "enquiry",
     "path": "/enquiry",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\enquiry\\\\index.vue",
-    "chunkName": "pages/enquiry/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\enquiry\\\\index.vue",
+    "chunkName": "pages/enquiry/index",
+    "_name": "_3f28ab10"
   },
   {
     "name": "gallery",
     "path": "/gallery",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\gallery\\\\index.vue",
-    "chunkName": "pages/gallery/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\gallery\\\\index.vue",
+    "chunkName": "pages/gallery/index",
+    "_name": "_d0b61dbe"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\login\\\\index.vue",
-    "chunkName": "pages/login/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_02a3f2ea"
   },
   {
     "name": "logout",
     "path": "/logout",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\logout.vue",
-    "chunkName": "pages/logout"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\logout.vue",
+    "chunkName": "pages/logout",
+    "_name": "_4e18d62a"
   },
   {
     "name": "mob",
     "path": "/mob",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\mob\\\\index.vue",
-    "chunkName": "pages/mob/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\mob\\\\index.vue",
+    "chunkName": "pages/mob/index",
+    "_name": "_178ed59a"
   },
   {
     "name": "programs",
     "path": "/programs",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\programs\\\\index.vue",
-    "chunkName": "pages/programs/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\programs\\\\index.vue",
+    "chunkName": "pages/programs/index",
+    "_name": "_993dcd1c"
   },
   {
     "name": "seo",
     "path": "/seo",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\seo\\\\index.vue",
-    "chunkName": "pages/seo/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\seo\\\\index.vue",
+    "chunkName": "pages/seo/index",
+    "_name": "_525273b6"
   },
   {
     "name": "social",
     "path": "/social",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\social\\\\index.vue",
-    "chunkName": "pages/social/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\social\\\\index.vue",
+    "chunkName": "pages/social/index",
+    "_name": "_24411918"
   },
   {
     "name": "testcontact",
     "path": "/testcontact",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\testcontact.vue",
-    "chunkName": "pages/testcontact"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\testcontact.vue",
+    "chunkName": "pages/testcontact",
+    "_name": "_1ae266bd"
   },
   {
     "name": "testimonials",
     "path": "/testimonials",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\index.vue",
-    "chunkName": "pages/testimonials/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\index.vue",
+    "chunkName": "pages/testimonials/index",
+    "_name": "_240bcb8d"
   },
   {
     "name": "testUpload",
     "path": "/testUpload",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\testUpload\\\\index.vue",
-    "chunkName": "pages/testUpload/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\testUpload\\\\index.vue",
+    "chunkName": "pages/testUpload/index",
+    "_name": "_2529e66e"
   },
   {
     "name": "texteditor",
     "path": "/texteditor",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\texteditor.vue",
-    "chunkName": "pages/texteditor"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\texteditor.vue",
+    "chunkName": "pages/texteditor",
+    "_name": "_77d85bbb"
   },
   {
     "name": "assistance-create",
     "path": "/assistance/create",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\create.vue",
-    "chunkName": "pages/assistance/create"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\create.vue",
+    "chunkName": "pages/assistance/create",
+    "_name": "_78c43095"
   },
   {
     "name": "programs-create",
     "path": "/programs/create",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\programs\\\\create.vue",
-    "chunkName": "pages/programs/create"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\programs\\\\create.vue",
+    "chunkName": "pages/programs/create",
+    "_name": "_3f1340e8"
   },
   {
     "name": "testimonials-create",
     "path": "/testimonials/create",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\create.vue",
-    "chunkName": "pages/testimonials/create"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\create.vue",
+    "chunkName": "pages/testimonials/create",
+    "_name": "_f5bc1e5e"
   },
   {
     "name": "assistance-id",
     "path": "/assistance/:id",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\_id.vue",
-    "chunkName": "pages/assistance/_id"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\assistance\\\\_id.vue",
+    "chunkName": "pages/assistance/_id",
+    "_name": "_0a38c3f1"
   },
   {
     "name": "contact-id",
     "path": "/contact/:id",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\contact\\\\_id.vue",
-    "chunkName": "pages/contact/_id"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\contact\\\\_id.vue",
+    "chunkName": "pages/contact/_id",
+    "_name": "_3e3ea2bb"
   },
   {
     "name": "enquiry-id",
     "path": "/enquiry/:id",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\enquiry\\\\_id.vue",
-    "chunkName": "pages/enquiry/_id"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\enquiry\\\\_id.vue",
+    "chunkName": "pages/enquiry/_id",
+    "_name": "_0ff39d10"
   },
   {
     "name": "programs-id",
     "path": "/programs/:id",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\programs\\\\_id.vue",
-    "chunkName": "pages/programs/_id"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\programs\\\\_id.vue",
+    "chunkName": "pages/programs/_id",
+    "_name": "_da2a5f4c"
   },
   {
     "name": "testimonials-id",
     "path": "/testimonials/:id",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\_id.vue",
-    "chunkName": "pages/testimonials/_id"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\testimonials\\\\_id.vue",
+    "chunkName": "pages/testimonials/_id",
+    "_name": "_817d6596"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\Alan\\\\Research\\\\pingo-rianair-production\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "E:\\\\pingo-rianair-production\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7182b8fe"
   }
 ]
