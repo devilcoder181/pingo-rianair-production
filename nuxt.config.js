@@ -84,7 +84,6 @@ export default {
       analytics: false,
     },
   },
-
   pwa: {
     name: "Pingo Admin - RianAir",
     short_name: "Pingo Admin - RianAir",
@@ -95,6 +94,7 @@ export default {
       mobileApp: true,
       mobileAppIOS: true,
       name: 'Pingo Admin - RianAir',
+      short_name: 'Pingo',
       author: 'DevilCoder181',
       description: 'Pingo CMS pannel for RianAir Website',
       theme_color: '#1b1c22',

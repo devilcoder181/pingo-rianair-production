@@ -11,9 +11,10 @@
   "private": true,
   "author": "Alan Sha Salim",
   "dependencies": {
+    "@nuxt/core": "^2.15.6",
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/pwa": "^3.3.5",
-    "@nuxt/core": "^2.15.6"
+    "@nuxtjs/onesignal": "^3.0.0-beta.16",
+    "@nuxtjs/pwa": "^3.3.5"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"FIRE_APIKEY":"AIzaSyDMkjSdCNGCldWgWWCdQPwat-mLAojcSdw","FIRE_MESID":"273896716312","FIRE_APPID":"1:273896716312:web:13cf68da448f23564ceb6d","FIRE_MESURID":"G-6TV65CMWTB","AXIOS_URL":"https://pingo-rianair-2f72e-default-rtdb.firebaseio.com/"}
+      env: {"FIRE_APIKEY":"AIzaSyDMkjSdCNGCldWgWWCdQPwat-mLAojcSdw","FIRE_MESID":"273896716312","FIRE_APPID":"1:273896716312:web:13cf68da448f23564ceb6d","FIRE_MESURID":"G-6TV65CMWTB"}
     }
     // Only set once
 
