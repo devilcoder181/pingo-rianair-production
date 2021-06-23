@@ -24,7 +24,7 @@
     <div class="p-row">
         <div class="p-col">     
             <transition name="global">
-                <AdminMobenquirylist></AdminMobenquirylist>
+                <AdminMobcontactlist></AdminMobcontactlist>
             </transition>
         </div>
     </div>
@@ -38,13 +38,13 @@ export default {
   layout: 'mobile',
   data() {
      return {
-      pageTitle: 'Enquiry Requests',
-      backLink: '/mob',
+      pageTitle: 'Contacts Requests',
+      backLink: '/mob/contacts',
      }
    },
    methods: {
      search(value) {
-       this.$store.commit('searchEnquiry', value)
+       this.$store.commit('searchContact', value)
      }
    }
 }

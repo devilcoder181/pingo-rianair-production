@@ -8,7 +8,7 @@
         </div>
 
         <div class="item_">
-            <nuxt-link to="/mob/contact">
+            <nuxt-link to="/mob/contacts">
                 <i class="icon icon-person-stalker"></i>
                 <strong>Contacts</strong>
             </nuxt-link>
@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
     .bottom_nav_wrapper{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;

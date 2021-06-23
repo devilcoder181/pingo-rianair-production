@@ -119,6 +119,13 @@
     "_name": "_1a04a1da"
   },
   {
+    "name": "mob-contacts",
+    "path": "/mob/contacts",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/mob/contacts/index.vue",
+    "chunkName": "pages/mob/contacts/index",
+    "_name": "_5f9eedd5"
+  },
+  {
     "name": "programs-create",
     "path": "/programs/create",
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/programs/create.vue",
@@ -131,6 +138,13 @@
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/testimonials/create.vue",
     "chunkName": "pages/testimonials/create",
     "_name": "_a40661d2"
+  },
+  {
+    "name": "mob-contacts-id",
+    "path": "/mob/contacts/:id",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/mob/contacts/_id.vue",
+    "chunkName": "pages/mob/contacts/_id",
+    "_name": "_2048617d"
   },
   {
     "name": "assistance-id",
@@ -152,6 +166,13 @@
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/enquiry/_id.vue",
     "chunkName": "pages/enquiry/_id",
     "_name": "_1c1ff64e"
+  },
+  {
+    "name": "mob-id",
+    "path": "/mob/:id",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/mob/_id.vue",
+    "chunkName": "pages/mob/_id",
+    "_name": "_58d3d78b"
   },
   {
     "name": "programs-id",

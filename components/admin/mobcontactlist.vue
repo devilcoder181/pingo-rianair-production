@@ -4,7 +4,7 @@
         <ul class="table_body hover_">
 
             <li 
-            v-for="(item, index) in searchEnquiryContent" 
+            v-for="(item, index) in searchContactContent" 
             :key="index" 
             @click="getMeInside(item.id)"
             :class="{active_: item.isActive}"
@@ -28,7 +28,7 @@ import { mapGetters } from 'vuex';
 
 export default {
     computed: {
-     ...mapGetters(['searchEnquiryContent'],),
+     ...mapGetters(['searchContactContent'],),
     },
     methods: {
         assignDate(value) {
@@ -36,7 +36,7 @@ export default {
         },
         getMeInside(value){
             this.$store.dispatch('makeActive', value)
-            this.$router.push(`/mob/${value}`)
+            this.$router.push(`/mob/contacts/${value}`)
         }
     }
 }

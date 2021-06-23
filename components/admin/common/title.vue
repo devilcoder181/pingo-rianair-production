@@ -19,7 +19,7 @@ export default {
     backLink: {
       type: String
     }
-  }
+  },
 }
 </script>
 
@@ -47,10 +47,6 @@ export default {
 
     .btn_{
       margin: 0 5px;
-
-      @media only screen and (max-width:767px){
-        display: none;
-      }
     }
 
   }

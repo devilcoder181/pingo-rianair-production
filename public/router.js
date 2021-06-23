@@ -21,11 +21,14 @@ const _14d90c87 = () => interopDefault(import('../pages/testimonials/index.vue' 
 const _55b96146 = () => interopDefault(import('../pages/testUpload/index.vue' /* webpackChunkName: "pages/testUpload/index" */))
 const _3ca875ac = () => interopDefault(import('../pages/texteditor.vue' /* webpackChunkName: "pages/texteditor" */))
 const _1a04a1da = () => interopDefault(import('../pages/assistance/create.vue' /* webpackChunkName: "pages/assistance/create" */))
+const _5f9eedd5 = () => interopDefault(import('../pages/mob/contacts/index.vue' /* webpackChunkName: "pages/mob/contacts/index" */))
 const _2a510508 = () => interopDefault(import('../pages/programs/create.vue' /* webpackChunkName: "pages/programs/create" */))
 const _a40661d2 = () => interopDefault(import('../pages/testimonials/create.vue' /* webpackChunkName: "pages/testimonials/create" */))
+const _2048617d = () => interopDefault(import('../pages/mob/contacts/_id.vue' /* webpackChunkName: "pages/mob/contacts/_id" */))
 const _c803f39a = () => interopDefault(import('../pages/assistance/_id.vue' /* webpackChunkName: "pages/assistance/_id" */))
 const _cb7a5eaa = () => interopDefault(import('../pages/contact/_id.vue' /* webpackChunkName: "pages/contact/_id" */))
 const _1c1ff64e = () => interopDefault(import('../pages/enquiry/_id.vue' /* webpackChunkName: "pages/enquiry/_id" */))
+const _58d3d78b = () => interopDefault(import('../pages/mob/_id.vue' /* webpackChunkName: "pages/mob/_id" */))
 const _fac00f2c = () => interopDefault(import('../pages/programs/_id.vue' /* webpackChunkName: "pages/programs/_id" */))
 const _eb02f6a2 = () => interopDefault(import('../pages/testimonials/_id.vue' /* webpackChunkName: "pages/testimonials/_id" */))
 const _24465e9c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -110,6 +113,10 @@ export const routerOptions = {
     component: _1a04a1da,
     name: "assistance-create"
   }, {
+    path: "/mob/contacts",
+    component: _5f9eedd5,
+    name: "mob-contacts"
+  }, {
     path: "/programs/create",
     component: _2a510508,
     name: "programs-create"
@@ -117,6 +124,10 @@ export const routerOptions = {
     path: "/testimonials/create",
     component: _a40661d2,
     name: "testimonials-create"
+  }, {
+    path: "/mob/contacts/:id",
+    component: _2048617d,
+    name: "mob-contacts-id"
   }, {
     path: "/assistance/:id",
     component: _c803f39a,
@@ -129,6 +140,10 @@ export const routerOptions = {
     path: "/enquiry/:id",
     component: _1c1ff64e,
     name: "enquiry-id"
+  }, {
+    path: "/mob/:id",
+    component: _58d3d78b,
+    name: "mob-id"
   }, {
     path: "/programs/:id",
     component: _fac00f2c,
