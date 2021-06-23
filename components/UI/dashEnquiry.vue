@@ -16,7 +16,7 @@
             :class="{active_: item.isActive}"
             >
                  <label>{{item.name}}</label>
-                 <label>{{item.program}}</label>
+                 <label>{{item.courses}}</label>
                  <label>{{assignDate(item.setDate)}}</label>
             </li>
 
@@ -33,7 +33,7 @@ export default {
     },
     methods: {
         assignDate(value) {
-            return new Date(value.seconds * 1000).toLocaleString()
+            return new Date(value).toLocaleString()
         },
         getMeInside(value){
             this.$store.dispatch('makeActive', value)

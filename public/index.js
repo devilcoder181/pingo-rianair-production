@@ -13,13 +13,13 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_72f62273 from 'nuxt_plugin_plugin_72f62273' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_serviceauthssrserver_497a406c from 'nuxt_plugin_serviceauthssrserver_497a406c' // Source: .\\firebase\\service.auth.ssr-server.js (mode: 'server')
-import nuxt_plugin_index_ed852f36 from 'nuxt_plugin_index_ed852f36' // Source: .\\firebase\\index.js (mode: 'all')
-import nuxt_plugin_serviceauthinitialize_ccd71a0c from 'nuxt_plugin_serviceauthinitialize_ccd71a0c' // Source: .\\firebase\\service.auth.initialize.js (mode: 'all')
-import nuxt_plugin_workbox_929d1a9c from 'nuxt_plugin_workbox_929d1a9c' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_d8c0d59c from 'nuxt_plugin_metaplugin_d8c0d59c' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_cf718ab4 from 'nuxt_plugin_iconplugin_cf718ab4' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
+import nuxt_plugin_plugin_610d6464 from 'nuxt_plugin_plugin_610d6464' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_serviceauthssrserver_1768559b from 'nuxt_plugin_serviceauthssrserver_1768559b' // Source: ./firebase/service.auth.ssr-server.js (mode: 'server')
+import nuxt_plugin_index_89ea8958 from 'nuxt_plugin_index_89ea8958' // Source: ./firebase/index.js (mode: 'all')
+import nuxt_plugin_serviceauthinitialize_67828829 from 'nuxt_plugin_serviceauthinitialize_67828829' // Source: ./firebase/service.auth.initialize.js (mode: 'all')
+import nuxt_plugin_workbox_5cdd0416 from 'nuxt_plugin_workbox_5cdd0416' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_7e5855ae from 'nuxt_plugin_metaplugin_7e5855ae' // Source: ./pwa/meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_75090ac6 from 'nuxt_plugin_iconplugin_75090ac6' // Source: ./pwa/icon.plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -216,32 +216,32 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_72f62273 === 'function') {
-    await nuxt_plugin_plugin_72f62273(app.context, inject)
+  if (typeof nuxt_plugin_plugin_610d6464 === 'function') {
+    await nuxt_plugin_plugin_610d6464(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_serviceauthssrserver_497a406c === 'function') {
-    await nuxt_plugin_serviceauthssrserver_497a406c(app.context, inject)
+  if (process.server && typeof nuxt_plugin_serviceauthssrserver_1768559b === 'function') {
+    await nuxt_plugin_serviceauthssrserver_1768559b(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_index_ed852f36 === 'function') {
-    await nuxt_plugin_index_ed852f36(app.context, inject)
+  if (typeof nuxt_plugin_index_89ea8958 === 'function') {
+    await nuxt_plugin_index_89ea8958(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_serviceauthinitialize_ccd71a0c === 'function') {
-    await nuxt_plugin_serviceauthinitialize_ccd71a0c(app.context, inject)
+  if (typeof nuxt_plugin_serviceauthinitialize_67828829 === 'function') {
+    await nuxt_plugin_serviceauthinitialize_67828829(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_929d1a9c === 'function') {
-    await nuxt_plugin_workbox_929d1a9c(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_5cdd0416 === 'function') {
+    await nuxt_plugin_workbox_5cdd0416(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_d8c0d59c === 'function') {
-    await nuxt_plugin_metaplugin_d8c0d59c(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_7e5855ae === 'function') {
+    await nuxt_plugin_metaplugin_7e5855ae(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_iconplugin_cf718ab4 === 'function') {
-    await nuxt_plugin_iconplugin_cf718ab4(app.context, inject)
+  if (typeof nuxt_plugin_iconplugin_75090ac6 === 'function') {
+    await nuxt_plugin_iconplugin_75090ac6(app.context, inject)
   }
 
   // Lock enablePreview in context

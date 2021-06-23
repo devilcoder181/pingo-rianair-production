@@ -8,7 +8,7 @@ const VUEX_PROPERTIES = ['state', 'getters', 'actions', 'mutations']
 let store = {};
 
 (function updateModules () {
-  store = normalizeRoot(require('..\\store\\index.js'), 'store/index.js')
+  store = normalizeRoot(require('../store/index.js'), 'store/index.js')
 
   // If store is an exported method = classic mode (deprecated)
 
@@ -19,39 +19,39 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('..\\store\\modules\\about.js'), 'modules/about.js')
-  resolveStoreModules(require('..\\store\\modules\\alertMessages.js'), 'modules/alertMessages.js')
-  resolveStoreModules(require('..\\store\\modules\\assistance.js'), 'modules/assistance.js')
-  resolveStoreModules(require('..\\store\\modules\\auth.js'), 'modules/auth.js')
-  resolveStoreModules(require('..\\store\\modules\\banner.js'), 'modules/banner.js')
-  resolveStoreModules(require('..\\store\\modules\\contact.js'), 'modules/contact.js')
-  resolveStoreModules(require('..\\store\\modules\\enquiry.js'), 'modules/enquiry.js')
-  resolveStoreModules(require('..\\store\\modules\\gallery.js'), 'modules/gallery.js')
-  resolveStoreModules(require('..\\store\\modules\\loader.js'), 'modules/loader.js')
-  resolveStoreModules(require('..\\store\\modules\\programs.js'), 'modules/programs.js')
-  resolveStoreModules(require('..\\store\\modules\\seo.js'), 'modules/seo.js')
-  resolveStoreModules(require('..\\store\\modules\\social.js'), 'modules/social.js')
-  resolveStoreModules(require('..\\store\\modules\\testimonials.js'), 'modules/testimonials.js')
+  resolveStoreModules(require('../store/modules/about.js'), 'modules/about.js')
+  resolveStoreModules(require('../store/modules/alertMessages.js'), 'modules/alertMessages.js')
+  resolveStoreModules(require('../store/modules/assistance.js'), 'modules/assistance.js')
+  resolveStoreModules(require('../store/modules/auth.js'), 'modules/auth.js')
+  resolveStoreModules(require('../store/modules/banner.js'), 'modules/banner.js')
+  resolveStoreModules(require('../store/modules/contact.js'), 'modules/contact.js')
+  resolveStoreModules(require('../store/modules/enquiry.js'), 'modules/enquiry.js')
+  resolveStoreModules(require('../store/modules/gallery.js'), 'modules/gallery.js')
+  resolveStoreModules(require('../store/modules/loader.js'), 'modules/loader.js')
+  resolveStoreModules(require('../store/modules/programs.js'), 'modules/programs.js')
+  resolveStoreModules(require('../store/modules/seo.js'), 'modules/seo.js')
+  resolveStoreModules(require('../store/modules/social.js'), 'modules/social.js')
+  resolveStoreModules(require('../store/modules/testimonials.js'), 'modules/testimonials.js')
 
   // If the environment supports hot reloading...
 
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
-      '..\\store\\index.js',
-      '..\\store\\modules\\about.js',
-      '..\\store\\modules\\alertMessages.js',
-      '..\\store\\modules\\assistance.js',
-      '..\\store\\modules\\auth.js',
-      '..\\store\\modules\\banner.js',
-      '..\\store\\modules\\contact.js',
-      '..\\store\\modules\\enquiry.js',
-      '..\\store\\modules\\gallery.js',
-      '..\\store\\modules\\loader.js',
-      '..\\store\\modules\\programs.js',
-      '..\\store\\modules\\seo.js',
-      '..\\store\\modules\\social.js',
-      '..\\store\\modules\\testimonials.js',
+      '../store/index.js',
+      '../store/modules/about.js',
+      '../store/modules/alertMessages.js',
+      '../store/modules/assistance.js',
+      '../store/modules/auth.js',
+      '../store/modules/banner.js',
+      '../store/modules/contact.js',
+      '../store/modules/enquiry.js',
+      '../store/modules/gallery.js',
+      '../store/modules/loader.js',
+      '../store/modules/programs.js',
+      '../store/modules/seo.js',
+      '../store/modules/social.js',
+      '../store/modules/testimonials.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

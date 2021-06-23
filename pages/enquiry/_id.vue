@@ -16,7 +16,7 @@
                         <div class="p-col">
                             <div class="contact_title_wrapper">
                                 <h3>{{fetchEnquiryContent.name}}
-                                    <span>{{fetchEnquiryContent.program}}</span>
+                                    <span>{{fetchEnquiryContent.courses}}</span>
                                 </h3>
                                 
                                 <div class="button_wrapper">
@@ -43,7 +43,7 @@
                             <div class="p_details">
                                 <label>Program</label>
                                 <div class="holder_">
-                                    <span>{{fetchEnquiryContent.program}}</span>
+                                    <span>{{fetchEnquiryContent.courses}}</span>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                             <div class="p_details">
                                 <label>Message</label>
                                 <div class="holder_">
-                                    <span>{{fetchEnquiryContent.message}}</span>
+                                    <span>{{fetchEnquiryContent.messages}}</span>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ export default {
     },
     methods: {
        assignDate(value) {
-            return new Date(value.seconds * 1000).toLocaleString()
+            return new Date(value).toLocaleString()
         },
         delList(value) {
             this.deleteAlert = true;

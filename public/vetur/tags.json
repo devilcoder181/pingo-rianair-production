@@ -2,36 +2,6 @@
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
-  "AdminAssistanceList": {
-    "description": "Auto imported from components/admin/assistanceList.vue"
-  },
-  "AdminBottomNav": {
-    "description": "Auto imported from components/admin/bottomNav.vue"
-  },
-  "AdminContactList": {
-    "description": "Auto imported from components/admin/contactList.vue"
-  },
-  "AdminEnquiryList": {
-    "description": "Auto imported from components/admin/enquiryList.vue"
-  },
-  "AdminMobenquirylist": {
-    "description": "Auto imported from components/admin/mobenquirylist.vue"
-  },
-  "AdminProgramList": {
-    "description": "Auto imported from components/admin/programList.vue"
-  },
-  "AdminSideNavigation": {
-    "description": "Auto imported from components/admin/sideNavigation.vue"
-  },
-  "AdminTestiList": {
-    "description": "Auto imported from components/admin/testiList.vue"
-  },
-  "AdminTopNav": {
-    "description": "Auto imported from components/admin/topNav.vue"
-  },
-  "AdminTopNavMobile": {
-    "description": "Auto imported from components/admin/topNavMobile.vue"
-  },
   "UIAlertDelete": {
     "description": "Auto imported from components/UI/alertDelete.vue"
   },
@@ -61,6 +31,36 @@
   },
   "UISearchFilter": {
     "description": "Auto imported from components/UI/searchFilter.vue"
+  },
+  "AdminAssistanceList": {
+    "description": "Auto imported from components/admin/assistanceList.vue"
+  },
+  "AdminBottomNav": {
+    "description": "Auto imported from components/admin/bottomNav.vue"
+  },
+  "AdminContactList": {
+    "description": "Auto imported from components/admin/contactList.vue"
+  },
+  "AdminEnquiryList": {
+    "description": "Auto imported from components/admin/enquiryList.vue"
+  },
+  "AdminMobenquirylist": {
+    "description": "Auto imported from components/admin/mobenquirylist.vue"
+  },
+  "AdminProgramList": {
+    "description": "Auto imported from components/admin/programList.vue"
+  },
+  "AdminSideNavigation": {
+    "description": "Auto imported from components/admin/sideNavigation.vue"
+  },
+  "AdminTestiList": {
+    "description": "Auto imported from components/admin/testiList.vue"
+  },
+  "AdminTopNav": {
+    "description": "Auto imported from components/admin/topNav.vue"
+  },
+  "AdminTopNavMobile": {
+    "description": "Auto imported from components/admin/topNavMobile.vue"
   },
   "AdminCommonFileUpload": {
     "description": "Auto imported from components/admin/common/fileUpload.vue"

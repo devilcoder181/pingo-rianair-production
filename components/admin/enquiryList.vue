@@ -26,7 +26,7 @@
                  <label>{{item.name}}</label>
                  <label>{{item.email}}</label>
                  <label>{{item.phone}}</label>
-                 <label>{{item.program}}</label>
+                 <label>{{item.courses}}</label>
                  <label>{{assignDate(item.setDate)}}</label>
                  <label>{{item.country}}</label>
                  <label>{{item.ip}}</label>
@@ -45,7 +45,7 @@ export default {
     },
     methods: {
         assignDate(value) {
-            return new Date(value.seconds * 1000).toLocaleString()
+            return new Date(value).toLocaleString()
         },
         getMeInside(value){
             this.$store.dispatch('makeActive', value)
