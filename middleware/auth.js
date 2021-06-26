@@ -4,11 +4,4 @@ export default function ({ store, redirect, error }) {
   }
   const winWidth = window.innerWidth;
 
-  if(winWidth < 767){
-    if (store.getters.isLoggedIn) {
-      return redirect('/mob')
-    }else{
-      return redirect('/login')
-    }
-  }
 }
