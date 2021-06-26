@@ -15,6 +15,7 @@ const _f3c9e44c = () => interopDefault(import('../pages/logout.vue' /* webpackCh
 const _b9b5cf3a = () => interopDefault(import('../pages/mob/index.vue' /* webpackChunkName: "pages/mob/index" */))
 const _eb2704fc = () => interopDefault(import('../pages/programs/index.vue' /* webpackChunkName: "pages/programs/index" */))
 const _7ce3dd80 = () => interopDefault(import('../pages/seo/index.vue' /* webpackChunkName: "pages/seo/index" */))
+const _959e1394 = () => interopDefault(import('../pages/settings/index.vue' /* webpackChunkName: "pages/settings/index" */))
 const _3bb4ea00 = () => interopDefault(import('../pages/social/index.vue' /* webpackChunkName: "pages/social/index" */))
 const _2907a9a4 = () => interopDefault(import('../pages/testcontact.vue' /* webpackChunkName: "pages/testcontact" */))
 const _14d90c87 = () => interopDefault(import('../pages/testimonials/index.vue' /* webpackChunkName: "pages/testimonials/index" */))
@@ -23,6 +24,7 @@ const _3ca875ac = () => interopDefault(import('../pages/texteditor.vue' /* webpa
 const _1a04a1da = () => interopDefault(import('../pages/assistance/create.vue' /* webpackChunkName: "pages/assistance/create" */))
 const _5f9eedd5 = () => interopDefault(import('../pages/mob/contacts/index.vue' /* webpackChunkName: "pages/mob/contacts/index" */))
 const _2a510508 = () => interopDefault(import('../pages/programs/create.vue' /* webpackChunkName: "pages/programs/create" */))
+const _18a21b48 = () => interopDefault(import('../pages/settings/create.vue' /* webpackChunkName: "pages/settings/create" */))
 const _a40661d2 = () => interopDefault(import('../pages/testimonials/create.vue' /* webpackChunkName: "pages/testimonials/create" */))
 const _2048617d = () => interopDefault(import('../pages/mob/contacts/_id.vue' /* webpackChunkName: "pages/mob/contacts/_id" */))
 const _c803f39a = () => interopDefault(import('../pages/assistance/_id.vue' /* webpackChunkName: "pages/assistance/_id" */))
@@ -30,6 +32,7 @@ const _cb7a5eaa = () => interopDefault(import('../pages/contact/_id.vue' /* webp
 const _1c1ff64e = () => interopDefault(import('../pages/enquiry/_id.vue' /* webpackChunkName: "pages/enquiry/_id" */))
 const _58d3d78b = () => interopDefault(import('../pages/mob/_id.vue' /* webpackChunkName: "pages/mob/_id" */))
 const _fac00f2c = () => interopDefault(import('../pages/programs/_id.vue' /* webpackChunkName: "pages/programs/_id" */))
+const _a459e3c4 = () => interopDefault(import('../pages/settings/_id.vue' /* webpackChunkName: "pages/settings/_id" */))
 const _eb02f6a2 = () => interopDefault(import('../pages/testimonials/_id.vue' /* webpackChunkName: "pages/testimonials/_id" */))
 const _24465e9c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -89,6 +92,10 @@ export const routerOptions = {
     component: _7ce3dd80,
     name: "seo"
   }, {
+    path: "/settings",
+    component: _959e1394,
+    name: "settings"
+  }, {
     path: "/social",
     component: _3bb4ea00,
     name: "social"
@@ -121,6 +128,10 @@ export const routerOptions = {
     component: _2a510508,
     name: "programs-create"
   }, {
+    path: "/settings/create",
+    component: _18a21b48,
+    name: "settings-create"
+  }, {
     path: "/testimonials/create",
     component: _a40661d2,
     name: "testimonials-create"
@@ -148,6 +159,10 @@ export const routerOptions = {
     path: "/programs/:id",
     component: _fac00f2c,
     name: "programs-id"
+  }, {
+    path: "/settings/:id",
+    component: _a459e3c4,
+    name: "settings-id"
   }, {
     path: "/testimonials/:id",
     component: _eb02f6a2,

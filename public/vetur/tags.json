@@ -44,6 +44,9 @@
   "AdminEnquiryList": {
     "description": "Auto imported from components/admin/enquiryList.vue"
   },
+  "AdminLocationList": {
+    "description": "Auto imported from components/admin/locationList.vue"
+  },
   "AdminMobcontactlist": {
     "description": "Auto imported from components/admin/mobcontactlist.vue"
   },

@@ -21,6 +21,7 @@ You can directly use them in pages and other components without the need to impo
 - `<AdminBottomNav>` | `<admin-bottom-nav>` (components/admin/bottomNav.vue)
 - `<AdminContactList>` | `<admin-contact-list>` (components/admin/contactList.vue)
 - `<AdminEnquiryList>` | `<admin-enquiry-list>` (components/admin/enquiryList.vue)
+- `<AdminLocationList>` | `<admin-location-list>` (components/admin/locationList.vue)
 - `<AdminMobcontactlist>` | `<admin-mobcontactlist>` (components/admin/mobcontactlist.vue)
 - `<AdminMobenquirylist>` | `<admin-mobenquirylist>` (components/admin/mobenquirylist.vue)
 - `<AdminProgramList>` | `<admin-program-list>` (components/admin/programList.vue)

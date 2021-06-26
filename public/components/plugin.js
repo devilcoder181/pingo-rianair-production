@@ -17,6 +17,7 @@ const components = {
   AdminBottomNav: () => import('../../components/admin/bottomNav.vue' /* webpackChunkName: "components/admin-bottom-nav" */).then(c => wrapFunctional(c.default || c)),
   AdminContactList: () => import('../../components/admin/contactList.vue' /* webpackChunkName: "components/admin-contact-list" */).then(c => wrapFunctional(c.default || c)),
   AdminEnquiryList: () => import('../../components/admin/enquiryList.vue' /* webpackChunkName: "components/admin-enquiry-list" */).then(c => wrapFunctional(c.default || c)),
+  AdminLocationList: () => import('../../components/admin/locationList.vue' /* webpackChunkName: "components/admin-location-list" */).then(c => wrapFunctional(c.default || c)),
   AdminMobcontactlist: () => import('../../components/admin/mobcontactlist.vue' /* webpackChunkName: "components/admin-mobcontactlist" */).then(c => wrapFunctional(c.default || c)),
   AdminMobenquirylist: () => import('../../components/admin/mobenquirylist.vue' /* webpackChunkName: "components/admin-mobenquirylist" */).then(c => wrapFunctional(c.default || c)),
   AdminProgramList: () => import('../../components/admin/programList.vue' /* webpackChunkName: "components/admin-program-list" */).then(c => wrapFunctional(c.default || c)),

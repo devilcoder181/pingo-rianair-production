@@ -17,8 +17,8 @@
 
       <nav class="navigation_list">
           <ul class="nav_">
-            <li v-for="(setting, index) in settings" :key="index">
-              <navlink :name="setting.name" :link="setting.link" :icon="setting.icon" ></navlink>
+            <li v-for="(setting, index) in settings" :key="index" @click="clsoeNotification">
+              <navlink  :name="setting.name" :link="setting.link" :icon="setting.icon" ></navlink>
             </li>
           </ul>
         </nav>
@@ -43,8 +43,8 @@
     data() {
       return{
         settings: [
-          {name: 'Settings', link:'/user', icon: 'icon icon-wrench'},
-          {name: 'Website', link:'/website', icon: 'icon icon-web'},
+          {name: 'Settings', link:'/settings', icon: 'icon icon-wrench'},
+         // {name: 'Website', link:'/website', icon: 'icon icon-web'},
          // {name: 'Logout', link:'/logout', icon: 'icon icon-log-in'},
         ]
       }

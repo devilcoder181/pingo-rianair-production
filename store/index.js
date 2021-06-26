@@ -12,6 +12,8 @@ import * as social from "./modules/social";
 import * as loader from "./modules/loader";
 import * as alert from "./modules/alertMessages";
 import * as seo from "./modules/seo";
+import * as location from "./modules/location";
+
 
 const createStore = () => {
   return new Vuex.Store({
@@ -29,7 +31,8 @@ const createStore = () => {
       banner,
       loader,
       alert,
-      seo
+      seo,
+      location
     }
   })
 }

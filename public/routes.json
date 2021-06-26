@@ -77,6 +77,13 @@
     "_name": "_7ce3dd80"
   },
   {
+    "name": "settings",
+    "path": "/settings",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/settings/index.vue",
+    "chunkName": "pages/settings/index",
+    "_name": "_959e1394"
+  },
+  {
     "name": "social",
     "path": "/social",
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/social/index.vue",
@@ -133,6 +140,13 @@
     "_name": "_2a510508"
   },
   {
+    "name": "settings-create",
+    "path": "/settings/create",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/settings/create.vue",
+    "chunkName": "pages/settings/create",
+    "_name": "_18a21b48"
+  },
+  {
     "name": "testimonials-create",
     "path": "/testimonials/create",
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/testimonials/create.vue",
@@ -180,6 +194,13 @@
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/programs/_id.vue",
     "chunkName": "pages/programs/_id",
     "_name": "_fac00f2c"
+  },
+  {
+    "name": "settings-id",
+    "path": "/settings/:id",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/settings/_id.vue",
+    "chunkName": "pages/settings/_id",
+    "_name": "_a459e3c4"
   },
   {
     "name": "testimonials-id",

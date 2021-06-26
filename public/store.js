@@ -28,6 +28,7 @@ let store = {};
   resolveStoreModules(require('../store/modules/enquiry.js'), 'modules/enquiry.js')
   resolveStoreModules(require('../store/modules/gallery.js'), 'modules/gallery.js')
   resolveStoreModules(require('../store/modules/loader.js'), 'modules/loader.js')
+  resolveStoreModules(require('../store/modules/location.js'), 'modules/location.js')
   resolveStoreModules(require('../store/modules/programs.js'), 'modules/programs.js')
   resolveStoreModules(require('../store/modules/seo.js'), 'modules/seo.js')
   resolveStoreModules(require('../store/modules/social.js'), 'modules/social.js')
@@ -48,6 +49,7 @@ let store = {};
       '../store/modules/enquiry.js',
       '../store/modules/gallery.js',
       '../store/modules/loader.js',
+      '../store/modules/location.js',
       '../store/modules/programs.js',
       '../store/modules/seo.js',
       '../store/modules/social.js',

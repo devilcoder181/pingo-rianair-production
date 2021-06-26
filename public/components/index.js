@@ -15,6 +15,7 @@ export { default as AdminAssistanceList } from '../../components/admin/assistanc
 export { default as AdminBottomNav } from '../../components/admin/bottomNav.vue'
 export { default as AdminContactList } from '../../components/admin/contactList.vue'
 export { default as AdminEnquiryList } from '../../components/admin/enquiryList.vue'
+export { default as AdminLocationList } from '../../components/admin/locationList.vue'
 export { default as AdminMobcontactlist } from '../../components/admin/mobcontactlist.vue'
 export { default as AdminMobenquirylist } from '../../components/admin/mobenquirylist.vue'
 export { default as AdminProgramList } from '../../components/admin/programList.vue'
@@ -50,6 +51,7 @@ export const LazyAdminAssistanceList = import('../../components/admin/assistance
 export const LazyAdminBottomNav = import('../../components/admin/bottomNav.vue' /* webpackChunkName: "components/admin-bottom-nav" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminContactList = import('../../components/admin/contactList.vue' /* webpackChunkName: "components/admin-contact-list" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminEnquiryList = import('../../components/admin/enquiryList.vue' /* webpackChunkName: "components/admin-enquiry-list" */).then(c => wrapFunctional(c.default || c))
+export const LazyAdminLocationList = import('../../components/admin/locationList.vue' /* webpackChunkName: "components/admin-location-list" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminMobcontactlist = import('../../components/admin/mobcontactlist.vue' /* webpackChunkName: "components/admin-mobcontactlist" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminMobenquirylist = import('../../components/admin/mobenquirylist.vue' /* webpackChunkName: "components/admin-mobenquirylist" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminProgramList = import('../../components/admin/programList.vue' /* webpackChunkName: "components/admin-program-list" */).then(c => wrapFunctional(c.default || c))
