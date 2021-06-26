@@ -12,7 +12,7 @@
         </div>
 
 
-        <ul class="table_body hover_">
+        <ul v-if="this.$userAgent.agent()" class="table_body hover_">
 
             <li
             v-for="(item, index) in searchContactContent"
@@ -31,6 +31,28 @@
                  <label>{{item.ip}}</label>
             </li>
 
+        </ul>
+
+        <ul v-if="!this.$userAgent.agent()" class="table_body hover_">
+             <li
+            v-for="(item, index) in searchContactContent"
+            :key="index"
+            @click="getMeInside(item.id)"
+            :class="{active_: item.isActive}"
+            >  
+             <div class="index_ sm_">
+                    <span class="icon icon-user"></span>
+                </div> 
+            <div class="content_">
+                  <label>{{item.name}}</label>
+                 <label>{{item.email}}</label>
+                 <label>{{item.phone}}</label>
+                 <label>{{assignDate(item.setDate)}}</label>
+                 <label>{{item.country}}</label>
+                 <label>{{item.ip}}</label>
+            </div>
+
+             </li>
         </ul>
     </div>
 

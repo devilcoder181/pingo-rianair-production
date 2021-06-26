@@ -8,7 +8,7 @@
             <label>Action</label>
         </div>
 
-        <ul class="table_body">
+        <ul v-if="this.$userAgent.agent()" class="table_body">
             <li v-for="(item, index) in searchAssistanceContent" :key="index">
                 <div class="index_">
                     <span class="icon icon icon-folder-1"></span>
@@ -30,6 +30,38 @@
                         <nuxt-link :to="`/assistance/${item.id}`" class="link_"><span class="icon icon-pencil-square"></span></nuxt-link>
                     </li>
                 </ul>
+            </li>
+
+            <li v-for="(item, index) in searchAssistanceContent" :key="index">
+
+            </li>
+        </ul>
+
+        <ul class="table_body" v-if="!this.$userAgent.agent()">
+            <li v-for="(item, index) in searchAssistanceContent" :key="index">
+                <div class="index_">
+                    <span class="icon icon icon-folder-1"></span>
+                </div>
+
+                <div class="content_">
+                    <label>{{item.title}}</label>
+                <label>{{assignDate(item.setDate)}}</label>
+                <div class="badge_sec">
+                    <div class="badge_ green_" v-if="item.isActive">Active</div>
+                    <div class="badge_ orange_" v-if="!item.isActive">Disabled</div>
+                </div>
+                <ul class="action_">
+                    <li>
+                        <a :href="`https://www.rainair.in/assistance/${item.id}`" target="_blank" class="link_"><span class="icon icon-doc-text-inv"></span></a>
+                    </li>
+                    <li>
+                        <button @click="deleteNow(item.id)" class="link_"><span class="icon icon-trash"></span></button>
+                    </li>
+                    <li>
+                        <nuxt-link :to="`/assistance/${item.id}`" class="link_"><span class="icon icon-pencil-square"></span></nuxt-link>
+                    </li>
+                </ul>
+                </div>
             </li>
         </ul>
 

@@ -94,12 +94,6 @@
       background-color: $color-dark-2;
       opacity: 0.8;
     }
-
-    .navigation_list{
-      @media only screen and (max-width:767px){
-        display: none;
-      }
-    }
     .notification_area {
       position: absolute;
       top: 0;

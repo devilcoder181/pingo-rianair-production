@@ -40,8 +40,8 @@
       </div>
     </div>
 
-    <div class="p-row">
-      <div class="p-col-8">
+    <div class="p-row" >
+      <div class="p-col-8" v-if="this.$userAgent.agent()">
 
         <div class="p-content-body">
           <h3 class="dash_title">Client Graph</h3>
@@ -52,7 +52,7 @@
 
       </div>
 
-      <div class="p-col-4">
+      <div class="p-col-4" v-if="this.$userAgent.agent()">
         <div class="p-content-body">
           <h3 class="dash_title">Site Reach</h3>
           <UIDashReach></UIDashReach>
@@ -102,5 +102,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
+
+  @media only screen and (max-width:767px){
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75em;
+  }
 }
 </style>

@@ -37,6 +37,9 @@
             transform: translateX(-50%) translateY(-50%);
             background: $color-primary;
             border-radius: 50%;
+
+          
+
             h3{
                 display: block;
                 margin: 0;

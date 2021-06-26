@@ -11,6 +11,12 @@
     </div>
 
     <div class="p-row">
+      <div class="p-col-3" v-if="!this.$userAgent.agent()">
+          <div class="p-content-body">
+              <AdminCommonFileUpload title="Upload Image"  @update-imageURL="getURL"></AdminCommonFileUpload>
+          </div>
+      </div>
+
       <div class="p-col-9">
         <div class="p-content-body">
             <div class="p-row">
@@ -25,7 +31,7 @@
         </div>
       </div>
 
-      <div class="p-col-3">
+      <div class="p-col-3" v-if="this.$userAgent.agent()">
           <div class="p-content-body">
               <AdminCommonFileUpload title="Upload Image"  @update-imageURL="getURL"></AdminCommonFileUpload>
           </div>

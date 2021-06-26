@@ -92,6 +92,11 @@
       border-radius: 1em;
       text-align: center;
 
+      @media only screen and (max-width:767px){
+        min-width: 90%;
+        max-width: 95%;
+      }
+
       h3 {
         margin: 0.5em 0;
         @include mdText2();
@@ -116,6 +121,10 @@
           display: block;
           width: 7.5vw;
           margin: 0 auto;
+
+          @media only screen and (max-width:767px){
+            width: 25vw;
+      }
 
           path{
               fill: $error;

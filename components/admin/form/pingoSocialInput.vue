@@ -78,7 +78,7 @@ export default {
          height: 2.75rem;
          border: none;
          outline: none;
-         font-size: 1vw;
+         @include smText2();
          font-weight: 500;
          color: $color-white;
          padding: 0.5em 1em;

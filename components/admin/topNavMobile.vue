@@ -10,6 +10,14 @@
         <div class="user_icon" @click="openNotifications()">
           <img src="/rian-air-og.png" alt="Username">
         </div>
+
+        <div class="toggler_">
+          <button class="hamburger" :class="{'active_': showMenu}" @click="openMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -24,16 +32,25 @@
   import notification from '@/components/admin/common/notification'
 
   export default {
+    props: {
+      showMenu: {
+        type: Boolean
+      }
+    },
     data() {
       return {
-        openNav: false
+        openNav: false,
+        menuClass: false,
       }
     },
     methods: {
       openNotifications(){
         this.openNav = !this.openNav
        // console.log(this.openNav)
-      }
+      },
+      openMenu() {
+        this.$emit('toggleMenu')
+      },
     },
     components: {
       notification
@@ -43,6 +60,33 @@
 
 <style lang="scss" scoped>
   @import '~assets/styles/admin/components/variables.scss';
+
+  .hamburger{
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+
+    .line{
+      width: 35px;
+      height: 4px;
+      background-color: #ecf0f1;
+      display: block;
+      margin: 6px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.active_{
+      .line{
+        &:nth-child(1){transform: translateY(10px) rotate(45deg);}
+        &:nth-child(2){opacity: 0;}
+        &:nth-child(3){transform: translateY(-10px) rotate(-45deg);}
+      }
+    }
+  }
 
   .top_nav_wrapper{
     position: relative;
@@ -67,6 +111,7 @@
       width: auto;
       display: flex;
       align-content: center;
+      margin: 0 -5px;
 
       .user_details{
         position: relative;
@@ -101,6 +146,7 @@
         cursor: pointer;
         border: 2px solid $color-text;
         transition: all 0.3s ease;
+        margin: 0 5px;
 
         &:hover{
           border: 2px solid $color-primary;
@@ -111,6 +157,10 @@
           height: 100%;
           object-fit: fill;
         }
+      }
+
+      .hamburger{
+        margin: 0 5px;
       }
 
     }

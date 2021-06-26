@@ -7,7 +7,7 @@
     <nav class="navigation_list">
       <label>App</label>
       <ul class="nav_">
-        <li v-for="(apps, index) in app" :key="index">
+        <li v-for="(apps, index) in app" :key="index" @click="openMenu">
           <navlink :name="apps.name" :link="apps.link" :icon="apps.icon" ></navlink>
         </li>
       </ul>
@@ -16,7 +16,7 @@
     <nav class="navigation_list">
       <label>Settings</label>
       <ul class="nav_">
-        <li v-for="(setting, index) in settings" :key="index">
+        <li v-for="(setting, index) in settings" :key="index" @click="openMenu">
           <navlink :name="setting.name" :link="setting.link" :icon="setting.icon" ></navlink>
         </li>
       </ul>
@@ -50,6 +50,11 @@
           {name: 'SEO', link:'/seo', icon: 'icon icon-graph-bar'},
         ]
       }
+    },
+    methods: {
+      openMenu() {
+        this.$emit('closeMenu')
+      }
     }
   }
 </script>
@@ -71,6 +76,10 @@
     left: 0;
     overflow-y: scroll;
 
+    @media only screen and (max-width:767px){
+      width: 75vw;
+    }
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -89,6 +98,11 @@
       position: relative;
       display: block;
       height: 4vw;
+
+      @media only screen and (max-width:767px){
+          height: 30vw;
+          padding: 1em;
+        } 
 
       img{
         display: block;
@@ -109,6 +123,10 @@
         font-weight: 500;
         color: $color-text;
         margin-bottom: 1em;
+
+        @media only screen and (max-width:767px){
+          font-size: 4vw;
+        } 
       }
 
       .nav_{

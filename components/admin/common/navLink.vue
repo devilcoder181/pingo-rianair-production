@@ -33,10 +33,18 @@
     padding: 0.75em 1em;
     border-radius: 0.25em;
 
+    @media only screen and (max-width:767px){
+      font-size: 4vw;
+    }
+
     i{
       position: relative;
       font-size: 1vw;
       color: $color-icon;
+
+      @media only screen and (max-width:767px){
+        font-size: 6vw;
+      }
     }
 
     span{

@@ -53,6 +53,11 @@
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-gap: 2.5vw;
     align-items: center;
+
+    @media only screen and (max-width:767px){
+      grid-template-columns: 1fr;
+    }
+
     label {
         display: block;
         position: relative;
@@ -79,12 +84,16 @@
           top: 50%;
           left: 0;
           width: 3vw;
-          font-size: 1.2vw;
+          @include smText2();
           color: $color-text;
           pointer-events: none;
           transform: translateY(-50%);
           display: block;
           text-align: center;
+
+          @media only screen and (max-width:767px){
+            width: 10vw;
+          }
         }
 
         input {
@@ -94,7 +103,7 @@
           height: 2.5rem;
           border: none;
           outline: none;
-          font-size: 1vw;
+          @include smText2();
           font-weight: 500;
           color: $color-white;
           padding: 0.5em 1em;
@@ -102,6 +111,10 @@
           border-radius: 0.25em;
           transition: all 0.3s ease;
           padding-left: 3vw;
+
+          @media only screen and (max-width:767px){
+            padding-left: 10vw;
+          }
 
           &:focus {
             box-shadow: none;

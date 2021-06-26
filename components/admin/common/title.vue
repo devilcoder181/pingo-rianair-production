@@ -30,6 +30,10 @@ export default {
     align-items: center;
     justify-content: space-between;
 
+    @media only screen and (max-width:767px){
+      flex-direction: column;
+    }
+
     h1{
       position: relative;
       display: block;

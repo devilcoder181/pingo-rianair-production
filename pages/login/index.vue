@@ -86,11 +86,9 @@ export default {
             this.login.email,
             this.login.password
           )
-          if(winWidth < 768){
-            this.$router.push("/mob/");
-          }else{
+
             this.$router.push("/");
-          }
+          
         
         } catch (e) {
           this.errorMessage = e;

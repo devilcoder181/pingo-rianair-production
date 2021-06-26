@@ -49,6 +49,10 @@ export default {
     transition: all 0.3s ease;
     overflow: hidden;
 
+    @media only screen and (max-width:767px){
+      border-radius: 0.75em;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -117,6 +121,15 @@ export default {
         font-size: 2.5vw;
         display: contents;
         color: $color-white;
+      }
+
+      @media only screen and (max-width:767px){
+        width: 12vw;
+        height: 12vw;
+
+        i{
+          font-size: 7.5vw;
+        }
       }
     }
 
