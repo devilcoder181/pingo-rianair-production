@@ -70,6 +70,13 @@
     "_name": "_eb2704fc"
   },
   {
+    "name": "seminar",
+    "path": "/seminar",
+    "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/seminar/index.vue",
+    "chunkName": "pages/seminar/index",
+    "_name": "_54bd0f14"
+  },
+  {
     "name": "seo",
     "path": "/seo",
     "component": "/Users/alansalim/Desktop/Dev/pingo-rianair-production/pages/seo/index.vue",

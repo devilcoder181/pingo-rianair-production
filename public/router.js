@@ -14,6 +14,7 @@ const _0db33f8c = () => interopDefault(import('../pages/login/index.vue' /* webp
 const _f3c9e44c = () => interopDefault(import('../pages/logout.vue' /* webpackChunkName: "pages/logout" */))
 const _b9b5cf3a = () => interopDefault(import('../pages/mob/index.vue' /* webpackChunkName: "pages/mob/index" */))
 const _eb2704fc = () => interopDefault(import('../pages/programs/index.vue' /* webpackChunkName: "pages/programs/index" */))
+const _54bd0f14 = () => interopDefault(import('../pages/seminar/index.vue' /* webpackChunkName: "pages/seminar/index" */))
 const _7ce3dd80 = () => interopDefault(import('../pages/seo/index.vue' /* webpackChunkName: "pages/seo/index" */))
 const _959e1394 = () => interopDefault(import('../pages/settings/index.vue' /* webpackChunkName: "pages/settings/index" */))
 const _3bb4ea00 = () => interopDefault(import('../pages/social/index.vue' /* webpackChunkName: "pages/social/index" */))
@@ -87,6 +88,10 @@ export const routerOptions = {
     path: "/programs",
     component: _eb2704fc,
     name: "programs"
+  }, {
+    path: "/seminar",
+    component: _54bd0f14,
+    name: "seminar"
   }, {
     path: "/seo",
     component: _7ce3dd80,

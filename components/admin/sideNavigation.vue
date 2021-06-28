@@ -46,6 +46,7 @@
           {name: 'Gallery', link:'/gallery', icon: 'icon icon-images'},
         ],
         settings: [
+          {name: 'Seminar', link:'/seminar', icon: 'icon icon-sticky-note'},
           {name: 'Social Media', link:'/social', icon: 'icon icon-cloud-thunder'},
           {name: 'SEO', link:'/seo', icon: 'icon icon-graph-bar'},
         ]

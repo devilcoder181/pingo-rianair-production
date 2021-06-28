@@ -13,6 +13,7 @@ import * as loader from "./modules/loader";
 import * as alert from "./modules/alertMessages";
 import * as seo from "./modules/seo";
 import * as location from "./modules/location";
+import * as seminar from "./modules/seminar";
 
 
 const createStore = () => {
@@ -32,7 +33,8 @@ const createStore = () => {
       loader,
       alert,
       seo,
-      location
+      location,
+      seminar
     }
   })
 }
