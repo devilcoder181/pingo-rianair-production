@@ -21,7 +21,7 @@
                                 
                                 <div class="button_wrapper">
                                     <a :href="`tel:${fetchEnquiryContent.phone}`" class="btn_ btn_primary" target="blank_"><i class="icon icon-phone-square"></i> Call</a>
-                                    <a :href="`https://wa.me/${fetchEnquiryContent.phone}`" class="btn_ btn_green" target="blank_"><i class="icon icon-whatsapp-2"></i> Whatsapp</a>
+                                    <a :href="`https://wa.me/${fetchEnquiryContent.whatsapp}`" class="btn_ btn_green" target="blank_"><i class="icon icon-whatsapp-2"></i> Whatsapp</a>
                                     <a :href="`mailto:${fetchEnquiryContent.email}`" class="btn_ btn_blue" target="blank_"><i class="icon icon-envelope-square"></i> Email</a>
                                     <button @click="delList(fetchEnquiryContent.id)" class="btn_ btn_danger plane_"><i class="icon icon-trash"></i></button>
                                     <button disabled class="btn_ btn_primary">{{assignDate(fetchEnquiryContent.setDate)}}</button>
@@ -48,11 +48,29 @@
                             </div>
                         </div>
 
-                        <div class="p-col-6">
+                        <div class="p-col-4">
                             <div class="p_details">
                                 <label>Email</label>
                                 <div class="holder_">
                                     <span>{{fetchEnquiryContent.email}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-col-4">
+                            <div class="p_details">
+                                <label>Gender</label>
+                                <div class="holder_">
+                                    <span>{{fetchEnquiryContent.gender}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-col-4">
+                            <div class="p_details">
+                                <label>Age</label>
+                                <div class="holder_">
+                                    <span>{{fetchEnquiryContent.age}}</span>
                                 </div>
                             </div>
                         </div>
@@ -68,9 +86,36 @@
 
                         <div class="p-col-6">
                             <div class="p_details">
+                                <label>Whatsapp / Alternate</label>
+                                <div class="holder_">
+                                    <span>{{fetchEnquiryContent.whatsapp}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-col-6">
+                            <div class="p_details">
                                 <label>Country</label>
                                 <div class="holder_">
                                     <span>{{fetchEnquiryContent.country}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-col-6">
+                            <div class="p_details">
+                                <label>State</label>
+                                <div class="holder_">
+                                    <span>{{fetchEnquiryContent.state}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-col-6">
+                            <div class="p_details">
+                                <label>Education</label>
+                                <div class="holder_">
+                                    <span>{{fetchEnquiryContent.edu}}</span>
                                 </div>
                             </div>
                         </div>

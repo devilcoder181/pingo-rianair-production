@@ -3,7 +3,7 @@
         <div class="table_head">
             <label>Index</label>
             <label>Name</label>
-            <label>Email</label>
+            <label>State</label>
             <label>Phone</label>
             <label>Program</label>
             <label>Date</label>
@@ -24,7 +24,7 @@
                     <span class="icon icon-social-buffer"></span>
                 </div>
                  <label>{{item.name}}</label>
-                 <label>{{item.email}}</label>
+                 <label>{{item.state}}</label>
                  <label>{{item.phone}}</label>
                  <label>{{item.courses}}</label>
                  <label>{{assignDate(item.setDate)}}</label>
